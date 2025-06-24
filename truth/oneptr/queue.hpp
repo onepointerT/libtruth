@@ -147,13 +147,11 @@ public:
     }
     
     iterator insert( const_iterator pos, const T& value ) {
-        queue_element< T >* qe = new queue_element< T >( value );
-        iterator prv = pos; --prv;
+        queue_element< T >* qe = new queue_element< T >( &value );
         qe->next = *pos;
-        qe->prev = prv;
+        qe->prev = (*pos)->next;
         qe->prev->next = qe;
         iterator it = std::deque< queue_element< T >* >::insert( pos, qe );
-        pos->prev = qe;
         return it;
     }
 
@@ -178,7 +176,7 @@ public:
             qe->prev = prv;
             qe->prev->next = qe;
             it = std::deque< queue_element< T >* >::insert( pos, qe );
-            pos->prev = qe;
+            qe->next->prev = qe;
         }
         return it;
     }
@@ -202,12 +200,28 @@ public:
         return it;
     }
 
+    iterator insert( const_iterator pos, std::initializer_list<T*> ilist ) {
+        iterator it;
+        for ( T* value : ilist ) {
+            queue_element< T >* qe = new queue_element< T >( value, (*pos)->prev, *pos );
+            it = std::deque< oneptr::queue_element< T >* >::insert( pos, qe );
+            qe->next->prev = qe;
+            qe->prev->next = qe;
+        }
+        return it;
+    }
+
     void push_back( const T& value ) {
-        queue_element< T >* qe = new queue_element< T >( value, nullptr, this->back() );
+        queue_element< T >* qe = new queue_element< T >( &value, nullptr, this->back() );
         std::deque< oneptr::queue_element< T >* >::push_back( qe );
     }
 
     void push_back( T&& value ) {
+        queue_element< T >* qe = new queue_element< T >( value, nullptr, this->back() );
+        std::deque< oneptr::queue_element< T >* >::push_back( qe );
+    }
+
+    void push_back( T* value ) {
         queue_element< T >* qe = new queue_element< T >( value, nullptr, this->back() );
         std::deque< oneptr::queue_element< T >* >::push_back( qe );
     }
@@ -218,6 +232,11 @@ public:
     }
 
     void push_front( T&& value ) {
+        queue_element< T >* qe = new queue_element< T >( value, this->front() );
+        std::deque< oneptr::queue_element< T >* >::push_front( qe );
+    }
+
+    void push_front( T* value ) {
         queue_element< T >* qe = new queue_element< T >( value, this->front() );
         std::deque< oneptr::queue_element< T >* >::push_front( qe );
     }

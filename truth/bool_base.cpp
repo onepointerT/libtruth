@@ -229,12 +229,12 @@ BoolType::expression_t BoolType::atomic_bracket_find( expr_t expr, size_t max_br
         new_expr = new BoolExpr( bstr );
         atomic_term_t* att = new atomic_term_t{ *new_expr, new_expr->is() };
         oneptr::queue<atomic_term_t>* qat = new oneptr::queue<atomic_term_t>();
-        qat->push_back( *att );//( qat->begin(), { att } );
+        qat->insert( qat->cbegin(), { att } );
         bool_expression_t be{ "", "" };
         term_t tt = BoolType::find_terms( *new_expr, be );
         qat->append_range( std::ranges::subrange{ tt.first->second->begin(), tt.first->second->end() } );
         atomic_terms_t* ats = new atomic_terms_t{ *new_expr, qat };
-        aet->insert( aet->cbegin(), { *ats } );// aet->end(), { ats } );
+        aet->insert( aet->cbegin(), { ats } );
     }
     
     return expression_t{ aet, *new_expr };
@@ -330,7 +330,7 @@ BoolType::small_term_queue_t* BoolType::find_operator_in_expr( expr_t expr ) {
 
         if ( v2.length() > 0 || ( o == "!" && v1.length() > 0 ) ) {
             stt = new small_term_t{ { v1, v2 }, BoolOperator::is( o ) };
-            stqt->push_back( *stt );
+            stqt->push_back( stt );
 
             stt = nullptr;
             v1 = "", v2 = "", o = "";
@@ -414,7 +414,7 @@ BoolType::bindval_queue_t* BoolType::find_operators( expr_t expr, bindval_queue_
         }
         
         if ( ! found ) {
-            bindvals.insert( bindvals.begin(), { *bs } );
+            bindvals.insert( bindvals.begin(), { bs } );
         }
     }
 
