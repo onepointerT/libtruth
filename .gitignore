@@ -1,0 +1,6 @@
+build/
+.vscode/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake_install
+*.code-workspace
