@@ -1,0 +1,9 @@
+<map id="truth::TreeNode" name="truth::TreeNode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="43,183,165,208"/>
+<area shape="rect" id="Node000002" href="$d8/dc0/classtruth_1_1BoolOperator.html" title="The basic functionality class that can handle all supported operators, when they have one or two oper..." alt="" coords="5,80,152,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,118,104,182,99,183,82,119"/>
+<area shape="rect" id="Node000003" href="$d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics." alt="" coords="177,80,295,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,116,121,185,117,181,209,111"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="193,5,279,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,45,239,80,233,80,233,45"/>
+</map>

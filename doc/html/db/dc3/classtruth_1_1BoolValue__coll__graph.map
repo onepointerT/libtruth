@@ -1,0 +1,5 @@
+<map id="truth::BoolValue" name="truth::BoolValue">
+<area shape="rect" id="Node000001" title="The functionality a bool value of this library has, a simple enum class with transformation and assig..." alt="" coords="27,93,154,119"/>
+<area shape="rect" id="Node000002" href="$db/d98/uniontruth_1_1BoolValue_1_1Value.html" title="The conversion between the libtruth library and the general C++ bool functionality." alt="" coords="5,5,176,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,45,93,93,88,93,88,45"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="truth::BoolValue" name="truth::BoolValue">
+<area shape="rect" id="Node000001" title="The functionality a bool value of this library has, a simple enum class with transformation and assig..." alt="" coords="5,5,132,31"/>
+<area shape="rect" id="Node000002" href="$d6/d97/classtruth_1_1BoolType.html" title="The trivial and enhanced bool type of this library." alt="" coords="9,79,129,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
+</map>
