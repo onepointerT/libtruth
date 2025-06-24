@@ -135,7 +135,7 @@ public:
     /// @param lvalue The left value
     /// @param rvalue The right value
     /// @return `(lvalue || rvalue) && rvalue`
-    bool operator >>( const BoolValue rvalue ) { return !( this->value || !rvalue ) && (bool)rvalue; }
+    bool operator >>( const BoolValue rvalue ) { return !this->value || rvalue; }
     /// @brief `NEGATION` operator of this library
     /// @param lvalue The value
     /// @return `! value`
