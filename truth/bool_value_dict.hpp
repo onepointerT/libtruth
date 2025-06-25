@@ -27,6 +27,7 @@ public:
     enum Type : uint8_t {
         True = 1,
         False = 0,
+        Unknown = 2,
         None = 3
     };
 
@@ -44,19 +45,21 @@ public:
         static constexpr uint8_t True = 1;
         /// @brief The value `False`
         static constexpr uint8_t False = 0;
-        /// @brief The value `None`, thus `undefined` also
+        /// @brief The value `None`
         static constexpr uint8_t None = 3;
+        /// @brief The value `Unknown`
+        static constexpr uint8_t Unknown = 2;
         
         /// @brief Conversion operator to C++ default type `bool`
         operator bool() const { return t == BoolValue::True; }
         /// @brief Conversion operator to the default numeric logic-algebraic type `uint8_t`
-        operator uint8_t() const { return ( ( t == BoolValue::True ) ? Value::True : ( ( t == BoolValue::False ) ? Value::False : Value::None ) );  }
+        operator uint8_t() const { return ( ( t == BoolValue::True ) ? Value::True : ( ( t == BoolValue::False ) ? Value::False : ( t == BoolValue::None ? Value::None : Value::Unknown ) ) );  }
         /// @brief Conversion operator to the enum `BoolValue::Type` of the `enum class BoolValue`
         operator BoolValue::Type() const { return t; }
 
         /// @brief Assignment operator for logic-algebraic small enumeration type `uint8_t`
         /// @param value The value, e.g. from `BoolValue::Type`
-        void operator=( const uint8_t value ) { t = ( value == Value::True ? BoolValue::True : ( value == Value::False ? BoolValue::False : BoolValue::None ) ); b = t;  }
+        void operator=( const uint8_t value ) { t = ( value == Value::True ? BoolValue::True : ( value == Value::False ? BoolValue::False : ( value == Value::None ? BoolValue::None : BoolValue::Unknown )) ); b = t;  }
         /// @brief Assignment operator for logic-algebraic C++-generic type `bool`
         /// @param value The value, e.g. `true`, `false` or a condition
         void operator=( const bool value ) { b = value; t = ( value ? BoolValue::True : BoolValue::False ); }
@@ -153,6 +156,8 @@ using add_lvalue_reference_t = typename std::add_lvalue_reference<BoolValue> (Bo
 #define TRUTH_BOOL_TRUE(varname) BoolValue #varname = BoolValue::True;
 /// @brief Set and initialize `varname` to `BoolValue::None`
 #define TRUTH_BOOL_NONE(varname) BoolValue #varname = BoolValue::None;
+/// @brief Set and initialize `varname` to `BoolValue::None`
+#define TRUTH_BOOL_UNKNOWN(varname) BoolValue #varname = BoolValue::Unknown;
 
 
 /// @brief Check, if a type `C` is convertible to `T`.

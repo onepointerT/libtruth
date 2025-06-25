@@ -30,6 +30,23 @@ public:
     static Type is( const std::string op ) {
         return ( op == "&&" ? Type::AND : ( op == "||" ? Type::OR : ( op == ">>" ? Type::IMPLIES : ( op == "!" ? Type::NEGATION : Type::UNKNOWN ) ) ) );
     }
+
+    static const std::string string( const BoolOperator::Type op ) {
+        if ( op == Type::AND ) return " && ";
+        else if ( op == Type::OR ) return " || ";
+        else if ( op == Type::IMPLIES ) return " >> ";
+        else if ( op == Type::NEGATION ) return " ! ";
+        else return "";
+    }
+
+    static bool eval( const bool lhs, const BoolOperator::Type op, const bool rhs ) {
+        if ( op == Type::UNKNOWN ) return false;
+        else if ( op == Type::AND ) return lhs && rhs;
+        else if ( op == Type::OR ) return lhs || rhs;
+        else if ( op == Type::IMPLIES ) return !(lhs && !rhs) && rhs;
+        else if ( op == Type::NEGATION ) return !lhs;
+        else return false;
+    }
 };
 
 
