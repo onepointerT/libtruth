@@ -15,7 +15,7 @@ template< class ContentT, class LeafT >
 class Tree {
 public:
     // Forward declaration
-    template< typename LeafContentT, typename NodeContentT = ContentT >
+    template< typename LeafContentT, typename NodeContentT >
     class Node;
 
     /// @brief The class of all last sub-nodes, that cannot have a sub-node
@@ -58,7 +58,7 @@ public:
         /// @brief Constructor
         /// @param node_content A reference to the node's content
         /// @param parent_node A pointer to the parent node. Typically never a `nullptr` but for `tree.root`
-        Node( NodeContentT& node_content, Node< LeafContentType, NodeContentType >* parent_node = nullptr )
+        Node( NodeContentT& node_content, Node< LeafContentT, NodeContentT >* parent_node = nullptr )
             :   parent( parent_node )
             ,   leafs()
             ,   subs()
@@ -128,21 +128,23 @@ public:
     };
 
     /// @brief The leaf's type in this tree
-    typedef typename Leaf< LeafT, ContentT > leaf_t;
+    typedef Leaf< LeafT, ContentT > leaf_t;
     /// @brief The node's type in this tree
-    typedef typename Node< LeafT, ContentT > node_t;
+    typedef Node< LeafT, ContentT > node_t;
+    /// @brief The type of this tree
+    typedef Tree< ContentT, LeafT > tree_t;
     /// @brief The most upper top node in this tree, this thus means `root.parent == nullptr`
     node_t* root;
 
     /// @brief All nodes of this tree collected
-    std::set< node_t& > nodes;
+    std::set< node_t* > nodes;
     /// @brief All leafs of this tree collected
-    std::set< leaf_t& > leafs;
+    std::set< leaf_t* > leafs;
 
     /// @brief The iterator for the `nodes` collector data structure
-    typedef typename std::set< node_t& >::iterator node_iterator;
+    typedef std::set< node_t* >::iterator node_iterator;
     /// @brief The iterator for the `leafs` collector data structure
-    typedef typename std::set< leaf_t& >::iterator leaf_iterator;
+    typedef std::set< leaf_t* >::iterator leaf_iterator;
 
     /// @brief Constructor
     /// @param root_content The content of the most upper parent node, the root node of the tree
@@ -156,21 +158,21 @@ public:
     /// @param node A reference to the node to add
     /// @param behind A reference to the node that get the new sub-node
     void add( node_t& node, node_t& behind ) {
-        this->nodes.push_back( node );
-        behind.add_sub( node )
+        this->nodes.push_back( &node );
+        behind.add_sub( node );
     }
     /// @brief Add a leaf as sub-node of another node
     /// @param node A reference to the leaf to add
     /// @param behind A reference to the node that get the new sub-node
     void add( leaf_t& leaf, node_t& behind ) {
-        this->leafs.push_back( leaf );
+        this->leafs.push_back( &leaf );
         behind.add_leaf( leaf );
     }
     /// @brief Add a node as sub-node of a leaf and promote the leaf to a node
     /// @param node A reference to the node to add
     /// @param behind A reference to the leaf that get the new sub-node and to be promoted to a fully-featured node
     void add( node_t& node, leaf_t& behind ) {
-        this->leafs.erase( behind );
+        this->leafs.erase( &behind );
         node_t* ex_leaf_node = new node_t( behind );
         this->nodes.push_back( ex_leaf_node );
         this->add( node, ex_leaf_node );
@@ -183,12 +185,12 @@ public:
         for ( typename std::set< node_t& >::iterator it = another.nodes.begin()
             ; it != another.nodes.end(); ++it
         ) {
-            this->nodes.insert( *it );
+            this->nodes.insert( it );
         }
         for ( typename std::set< leaf_t& >::iterator it = another.leafs.begin()
             ; it != another.leafs.end(); ++it
         ) {
-            this->leafs.insert( *it );
+            this->leafs.insert( it );
         }
     }
     /// @brief Add a node between two nodes of this tree
@@ -198,7 +200,7 @@ public:
     /// @note After calling of this function, the following is concluded
     ///     `behind != before.parent && node.parent == behind && before.parent == node`
     void add_between( node_t& node, node_t& behind, node_t& before ) {
-        this->nodes.push_back( node );
+        this->nodes.push_back( &node );
         behind.add_sub( node );
         behind.remove_sub( before );
         before.parent = &node;
@@ -260,14 +262,14 @@ public:
     /// @return The number of nodes between root and node plus two
     const unsigned int depthTo( node_t* node ) {
         if ( node == this->root ) return 0;
-        else return this->depthTo(node.parent) + 1;
+        else return this->depthTo(node->parent) + 1;
     }
 
     /// @brief Calculate the depth to a leaf, beginning and starting at and with `root`
     /// @param leaf The leaf to calculate the depth since `root` of
     /// @return The number of nodes between root and leaf plus two
     const unsigned int depthTo( leaf_t* leaf ) {
-        return this->depthTo(leaf.parent) + 1;
+        return this->depthTo(leaf->parent) + 1;
     }
 };
 

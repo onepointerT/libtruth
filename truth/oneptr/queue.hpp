@@ -184,11 +184,6 @@ public:
     template< class InputIt >
     iterator insert( const_iterator pos, InputIt first, InputIt last ) {
         
-        iterator it = this->begin();
-        for ( iterator it : { this->begin(), this->end() } ) {
-            if ( *it == *pos ) break;
-        }
-
         return std::deque< queue_element< T >* >::insert_range( pos, std::ranges::subrange{ first, last } );
     }
 
@@ -207,6 +202,15 @@ public:
             it = std::deque< oneptr::queue_element< T >* >::insert( pos, qe );
             qe->next->prev = qe;
             qe->prev->next = qe;
+        }
+        return it;
+    }
+
+    template<class _Rng>
+    iterator insert_range( const_iterator pos, _Rng&& r ) {
+        iterator it = this->end();
+        for ( auto elem : r ) {
+            it = this->insert( pos, {elem} );
         }
         return it;
     }
