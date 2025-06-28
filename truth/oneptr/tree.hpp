@@ -62,7 +62,7 @@ public:
             :   parent( parent_node )
             ,   leafs()
             ,   subs()
-            ,   content( node_content )
+            ,   content( &node_content )
         {}
         /// @brief Copy Constructor
         /// @param leaf The leaf to promote to a full node
@@ -150,6 +150,12 @@ public:
     /// @param root_content The content of the most upper parent node, the root node of the tree
     Tree( ContentT& root_content )
         :   root( root_content, nullptr )
+        ,   nodes()
+        ,   leafs()
+    {}
+    /// @brief Constructor
+    Tree()
+        :   root( nullptr )
         ,   nodes()
         ,   leafs()
     {}

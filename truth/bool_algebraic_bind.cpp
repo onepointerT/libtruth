@@ -32,6 +32,11 @@ bool AlgebraicBind::eval() const {
 }
 
 
+BoolExpr& AlgebraicBind::string() const {
+    return *(new BoolExpr( value.first.first + BoolOperator::string(value.second) + value.first.second ));
+}
+
+
 const std::vector< AlgebraicSmallTerm* >& small_terms( const BoolExpr& expr ) {
 
     std::vector< AlgebraicSmallTerm* >* vast = new std::vector< AlgebraicSmallTerm* >();
@@ -68,11 +73,44 @@ BoolDict<BoolValue>& AlgebraicBind::fillDict( const bindval_t expr, BoolDict<Boo
     return bd;
 }
 
+void AlgebraicBind::push_evaluated_small_term( AlgebraicSmallTerm* ast ) {
+    if ( ast->value != BoolValue::None && ast->value != BoolValue::Unknown ) {
+        evaluated_terms.push_back( ast );
+    }
+}
+
+
+bool eval_expression_if_possible( const BoolExpr& expr, const oneptr::queue< AlgebraicSmallTerm > terms
+                                , BoolValue& result ) {
+    BoolValue res, tmp = BoolValue::Unknown;
+
+    BoolType::expression_t brackets = BoolType::atomic_bracket_find( expr, 0 );
+
+    return true;
+}
+
+bool AlgebraicBind::eval_if_possible() {
+    if ( AlgebraicBind::eval_expression_if_possible( this->value.first.first, this->evaluated_terms, this->truth.first )
+      && AlgebraicBind::eval_expression_if_possible( this->value.first.second, this->evaluated_terms, this->truth.second )
+    ) {
+        return true;
+    }
+    return false;
+}
+
 
 AlgebraicSmallTerm::AlgebraicSmallTerm( const std::string var1, const std::string var2, const BoolOperator::Type op, const BoolExpr& bexpr )
     :   term{ {var1, var2}, op }
     ,   expr( bexpr )
     ,   value( BoolValue::Unknown )
+    ,   from( nullptr )
+{}
+
+AlgebraicSmallTerm::AlgebraicSmallTerm( const std::string var1, const std::string var2, const BoolOperator::Type op, AlgebraicBind* from_expr )
+    :   term{ {var1, var2}, op }
+    ,   expr( from_expr->value.first.first.contains(string()) ? from_expr->value.first.first : from_expr->value.first.second )
+    ,   value( BoolValue::Unknown )
+    ,   from( from_expr )
 {}
 
 
@@ -80,6 +118,7 @@ AlgebraicSmallTerm::AlgebraicSmallTerm( const small_term_t& stt )
     :   term{ {stt.first.first, stt.first.second}, stt.second }
     ,   expr( *(new BoolExpr(stt.first.first + BoolOperator::string( stt.second ) + stt.first.second)) )
     ,   value( BoolValue::Unknown )
+    ,   from( nullptr )
 {}
 
 

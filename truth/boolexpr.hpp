@@ -7,12 +7,14 @@
 
 #include <cstddef>
 #include <deque>
+#include <initializer_list>
 #include <string>
 #include <string_view>
 #include <utility>
 #include <vector>
 
 #include "bool_value_dict.hpp"
+#include "boolop.hpp"
 #include "oneptr/queue.hpp"
 
 
@@ -72,8 +74,59 @@ public:
     /// @return `(*this) - substract`.
     BoolExpr& operator-( const std::string substract );
 
-    std::string find_prefix_before( const std::string expr );
-    std::string find_suffix_behind( const std::string expr );
+    /// @brief Find a prefix before the first occurence of an expression string
+    /// @param expr The expression string that delimits the prefix
+    /// @return The prefix before `expr`
+    std::string find_prefix_before( const std::string expr ) const;
+    /// @brief Find a suffix behind the first occurence of an expression string
+    /// @param expr The expression string that delimits the suffix
+    /// @return The prefix behind `expr`
+    std::string find_suffix_behind( const std::string expr ) const;
+
+    /// @brief Find the position of the first occurence of the string literals of `ils`
+    /// @param ils String literals to search for
+    /// @param pos The position to start searching with
+    /// @param count The number of characters to search
+    /// @return The first position of the first occurence of all found string literals
+    size_t find_first_of_all( const std::initializer_list<const char*> ils, size_t pos = 0, size_t count = npos ) const;
+    /// @brief Find the position of the last occurence of the string literals of `ils`
+    /// @param ils String literals to search for
+    /// @param pos The position to start searching with
+    /// @param count The number of characters to search
+    /// @return The last position of the last occurence of all found string literals
+    size_t find_last_of_all( const std::initializer_list<const char*> ils, size_t pos = npos, size_t count = npos ) const;
+    /// @brief Find reversely the position of the first occurence of the string literals of `ils`
+    /// @param ils String literals to search for
+    /// @param pos The position to start searching with
+    /// @param count The number of characters to search
+    /// @return The first position of the first occurence of all reversely found string literals
+    size_t rfind_first_of_all( const std::initializer_list<const char*> ils, size_t pos = npos, size_t count = npos ) const;
+
+    /// @brief An expression pair
+    typedef std::pair< std::pair< BoolExpr*, BoolExpr* >, BoolOperator::Type > expr_pair_t;
+
+    /// @brief Split the expression at the first occurence of the logical operator.
+    /// @param logic_operator The logical operator to search for. If `BoolOperator::ANY` is selected (default), then the first position
+    ///     of any logical operator is selected.
+    /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{nullptr, nullptr}`,
+    ///     if the search could not have any results.
+    expr_pair_t splitAtFirstOperator( const BoolOperator::Type logic_operator = BoolOperator::ANY ) const;
+    /// @brief Split the expression at the last occurence of the logical operator.
+    /// @param logic_operator The logical operator to search for. If `BoolOperator::ANY` is selected (default), then the last position
+    ///     of any logical operator is selected.
+    /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{nullptr, nullptr}`,
+    ///     if the search could not have any results.
+    expr_pair_t splitAtLastOperator( const BoolOperator::Type logic_operator = BoolOperator::ANY ) const;
+    /// @brief Split behind the first closing term bracket
+    /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{BoolExpr*, nullptr}`,
+    ///   if the logical expression is only followed by an operator and no further operands. `{ nullptr, nullptr }`, if the search could not
+    ///   be performed.
+    expr_pair_t splitBehindFirstClosingTermBracket() const;
+    /// @brief Split before the last opening term bracket
+    /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{nullptr, BoolExpr*}`,
+    ///   if the logical expression is only followed by an operator and no further operands. `{ nullptr, nullptr }`, if the search could not
+    ///   be performed.
+    expr_pair_t splitBeforeLastOpeningTermBracket() const;
 };
 
 /// @brief The simplified expression type of a `BoolExpr`

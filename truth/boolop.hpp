@@ -24,7 +24,8 @@ public:
         OR = 1,
         NEGATION = 2,
         IMPLIES = 3,
-        UNKNOWN = 8
+        UNKNOWN = 8,
+        ANY = 7
     };
 
     static Type is( const std::string op ) {
@@ -36,6 +37,7 @@ public:
         else if ( op == Type::OR ) return " || ";
         else if ( op == Type::IMPLIES ) return " >> ";
         else if ( op == Type::NEGATION ) return " ! ";
+        else if ( op == Type::ANY ) return "{ &&, ||, >> }";
         else return "";
     }
 

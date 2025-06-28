@@ -16,19 +16,19 @@ namespace truth {
 
 BoolType::BoolType( const BoolType::arguments_t args, bool value, BoolDict< BoolValue >* tvalues )
     :   BoolValue( value )
-    ,   result_in( args )
+    ,   results( args )
     ,   truth_values( tvalues != nullptr ? *tvalues : *(new BoolDict<BoolValue>()) )
 {}
 
 BoolType::BoolType( const bool value )
     :   BoolValue( value )
-    ,   result_in()
+    ,   results()
     ,   truth_values( *(new BoolDict<BoolValue>()) )
 {}
 
 BoolType::BoolType( const BoolType::Value value )
     :   BoolValue( value )
-    ,   result_in()
+    ,   results()
     ,   truth_values( *(new BoolDict<BoolValue>()) )
 {}
 
@@ -444,7 +444,7 @@ void BoolType::evaluate_bool_atomic( const atomic_expr_t expr, BoolType& res ) {
 
         Value bl = BoolType::evaluate_bool( att->first, res.truth_values );
 
-        res.result_in[ att->first ] = bl;
+        res.results[ att->first ] = bl;
     }
 }
 

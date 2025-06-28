@@ -19,6 +19,9 @@ class AlgebraicSmallTerm;
 
 /// @brief 
 class AlgebraicBind {
+protected:
+    oneptr::queue< AlgebraicSmallTerm > evaluated_terms;
+
 public:
     /// @brief The basic type with a left and a right expression that can be matched with operators.
     typedef std::pair< BoolExpr&, BoolExpr& > expr_t;
@@ -49,6 +52,8 @@ public:
     /// @brief Evaluate the `truth_t` value of `this->truth` with the operator
     /// @return `BoolOperator::eval( truth.first, value.second, truth.second )`
     bool eval() const;
+    /// @brief Get the expression of this algebraic bind
+    BoolExpr& string() const;
 
     /// @brief Get all small terms of found in `expr`
     /// @param expr The algebraic expression to search for smaller operands with their logic bind-operator.
@@ -68,6 +73,12 @@ public:
     /// @param bd The dict to fill with the new variables
     /// @return A reference to the bool dict `bd`
     static BoolDict<BoolValue>& fillDict( const bindval_t expr, BoolDict<BoolValue>& bd );
+
+    void push_evaluated_small_term( AlgebraicSmallTerm* ast );
+
+    static bool eval_expression_if_possible( const BoolExpr& expr, const oneptr::queue< AlgebraicSmallTerm > terms
+                                           , BoolValue& result );
+    bool eval_if_possible();
 };
 
 
@@ -85,6 +96,8 @@ public:
     const BoolExpr& expr;
     /// @brief The result of the evaluation
     BoolValue value;
+    /// @brief 
+    AlgebraicBind* from;
 
     /// @brief Evaluate the small term to a bool value.
     /// @tparam B The bool type, defaults to `BoolValue`
@@ -92,11 +105,14 @@ public:
     /// @return The truth value, that thus is also set in `this->value`
     template< typename B = BoolValue >
         requires is_bool_evaluatable< B >
-    bool eval( const BoolDict<B>& bd ) {
+    bool eval( const BoolDict<B>& bd, const B other = false ) {
         try {
             bool v1, v2 = false;
             if ( term.first.first.length() > 0 ) v1 = bd.at( term.first.first );
+            else v1 = other;
             if ( term.first.second.length() > 0 ) v2 = bd.at( term.first.second );
+            else v2 = other;
+            
             value = BoolOperator::eval( v1, term.second, v2 );
             return value;
         } catch ( std::out_of_range& oor ) {
@@ -110,10 +126,17 @@ public:
     /// @param op The operator between or in front of the variable(s)
     /// @param bexpr A reference to the maybe bigger `BoolExpr`
     AlgebraicSmallTerm( const std::string var1, const std::string var2, const BoolOperator::Type op, const BoolExpr& bexpr );
+    /// @brief Constructor
+    /// @param var1 The name of the first variable
+    /// @param var2 The name of the second variable
+    /// @param op The operator between or in front of the variable(s)
+    /// @param bexpr A reference to the maybe bigger `BoolExpr`
+    AlgebraicSmallTerm( const std::string var1, const std::string var2, const BoolOperator::Type op, AlgebraicBind* from_expr );
     /// @brief Copy Constructor
     /// @param stt A reference to the `small_term_t` to copy its values from
     AlgebraicSmallTerm( const small_term_t& stt );
     
+    const std::string string() const { return term.first.first + BoolOperator::string(term.second) + term.first.second; }
     /// @brief Make a `AlgebraicSmallTerm` out of a `BoolExpr`
     /// @param algebraic_logic_expr A reference to the newly created `AlgebraicSmallTerm`
     static AlgebraicSmallTerm& new_small_term( const BoolExpr& algebraic_logic_expr );

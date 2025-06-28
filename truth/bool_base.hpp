@@ -53,7 +53,7 @@ public:
     typedef typename std::pair< const BoolExpr, BoolType::Value > arguments_iter_t;
 
     /// @brief The current result of the evaluation
-    arguments_t result_in;
+    arguments_t results;
     /// @brief The current truth values for all variables that need to be evaluated
     BoolDict< BoolValue >& truth_values;
 
