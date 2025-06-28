@@ -1,27 +1,29 @@
 <map id="/mnt/e/repos/concepts/extern/libtruth/truth/bool_algebraic_bind.hpp" name="/mnt/e/repos/concepts/extern/libtruth/truth/bool_algebraic_bind.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="645,5,829,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="674,5,858,60"/>
 <area shape="rect" id="Node000002" href="$d7/dab/bool__algebraic__bind_8cpp.html" title=" " alt="" coords="5,211,188,265"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,67,180,213,178,208,641,62"/>
-<area shape="rect" id="Node000003" href="$d2/de5/bool__algebraic__eval_8hpp.html" title=" " alt="" coords="979,211,1163,265"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="788,65,938,160,1023,208,1020,213,935,165,786,70"/>
-<area shape="rect" id="Node000005" href="$d7/d13/bool__base_8hpp.html" title=" " alt="" coords="593,108,760,163"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="716,73,695,109,690,107,712,70"/>
-<area shape="rect" id="Node000010" href="$d8/d44/booltree_8hpp.html" title=" " alt="" coords="949,108,1116,163"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="828,62,956,105,955,110,826,67"/>
-<area shape="rect" id="Node000004" href="$d8/ddb/bool__algebraic__eval_8cpp.html" title=" " alt="" coords="980,313,1163,368"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1074,279,1074,313,1069,313,1069,279"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="580,152,403,177,200,213,189,216,188,210,199,208,402,172,579,146"/>
-<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="774,159,980,211,978,216,773,164"/>
-<area shape="rect" id="Node000006" href="$dd/d86/bool__atomic__term_8cpp.html" title=" " alt="" coords="785,211,955,265"/>
-<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="740,167,821,208,818,213,738,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="667,67,184,213,182,208,666,62"/>
+<area shape="rect" id="Node000003" href="$d2/de5/bool__algebraic__eval_8hpp.html" title=" " alt="" coords="785,211,969,265"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="770,73,777,117,794,161,814,187,838,208,834,212,810,191,789,164,772,119,765,74"/>
+<area shape="rect" id="Node000005" href="$d7/d13/bool__base_8hpp.html" title=" " alt="" coords="561,108,728,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="725,71,678,110,675,106,722,67"/>
+<area shape="rect" id="Node000010" href="$da/d39/bool__lazy_8cpp.html" title=" " alt="" coords="804,108,971,163"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="810,67,857,106,854,110,807,71"/>
+<area shape="rect" id="Node000011" href="$d8/d44/booltree_8hpp.html" title=" " alt="" coords="995,108,1161,163"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="861,62,998,105,996,110,860,67"/>
+<area shape="rect" id="Node000004" href="$d8/ddb/bool__algebraic__eval_8cpp.html" title=" " alt="" coords="785,313,968,368"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="879,279,879,313,874,313,874,279"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="548,153,385,179,200,213,189,216,188,210,199,208,384,174,547,148"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="718,166,817,208,815,213,716,170"/>
+<area shape="rect" id="Node000006" href="$dd/d86/bool__atomic__term_8cpp.html" title=" " alt="" coords="993,211,1163,265"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="742,154,981,208,993,211,992,216,980,213,741,159"/>
 <area shape="rect" id="Node000007" href="$d5/dd6/bool__base_8cpp.html" title=" " alt="" coords="593,211,760,265"/>
-<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="679,176,679,211,674,211,674,176"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="660,175,671,210,666,211,655,176"/>
 <area shape="rect" id="Node000008" href="$d1/d48/bool__value__dict_8cpp.html" title=" " alt="" coords="212,211,379,265"/>
-<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="581,164,391,213,380,216,378,211,389,208,579,159"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="549,167,380,215,378,210,547,162"/>
 <area shape="rect" id="Node000009" href="$d5/d4f/boolexpr_8cpp.html" title=" " alt="" coords="403,211,569,265"/>
-<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="616,171,537,213,535,208,614,167"/>
-<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="1050,175,1064,210,1059,212,1045,177"/>
-<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="980,172,914,213,911,208,977,168"/>
-<area shape="rect" id="Node000011" href="$dc/d02/booltree_8cpp.html" title=" " alt="" coords="1188,211,1355,265"/>
-<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="1108,166,1210,208,1208,213,1106,170"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="594,172,529,213,526,208,591,168"/>
+<area shape="poly" id="edge13_Node000011_Node000003" title=" " alt="" coords="1015,171,930,213,928,208,1012,166"/>
+<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="1081,176,1081,211,1075,211,1075,176"/>
+<area shape="rect" id="Node000012" href="$dc/d02/booltree_8cpp.html" title=" " alt="" coords="1188,211,1355,265"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="1142,167,1222,208,1220,213,1139,171"/>
 </map>

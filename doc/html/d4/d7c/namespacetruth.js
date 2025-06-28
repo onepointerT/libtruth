@@ -45,6 +45,6 @@ var namespacetruth =
     ] ],
     [ "eval", "d4/d7c/namespacetruth.html#aa9a2a9bf02a4eb93dbbf65780e07eecc", null ],
     [ "eval_expression_if_possible", "d4/d7c/namespacetruth.html#a8d18992243b77db95c02a39bdc612708", null ],
-    [ "get_new", "d4/d7c/namespacetruth.html#ad53879f4da1e0ca5edbe03ff8af4316c", null ],
+    [ "get_new", "d4/d7c/namespacetruth.html#aecfc71055e763ecce41be75751d7ae8b", null ],
     [ "small_terms", "d4/d7c/namespacetruth.html#ae59b36b617759dfbdc4b3aef8598e497", null ]
 ];

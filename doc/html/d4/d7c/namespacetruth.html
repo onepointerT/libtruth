@@ -221,9 +221,11 @@ Functions</h2></td></tr>
 <tr class="separator:ae59b36b617759dfbdc4b3aef8598e497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d18992243b77db95c02a39bdc612708" id="r_a8d18992243b77db95c02a39bdc612708"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#a8d18992243b77db95c02a39bdc612708">eval_expression_if_possible</a> (const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;expr, const oneptr::queue&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> &gt; terms, <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;result)</td></tr>
 <tr class="separator:a8d18992243b77db95c02a39bdc612708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad53879f4da1e0ca5edbe03ff8af4316c" id="r_ad53879f4da1e0ca5edbe03ff8af4316c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa">truth_pair_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#ad53879f4da1e0ca5edbe03ff8af4316c">get_new</a> (const <a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html">AtomicBoolTerm</a> *abt)</td></tr>
-<tr class="separator:ad53879f4da1e0ca5edbe03ff8af4316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfc71055e763ecce41be75751d7ae8b" id="r_aecfc71055e763ecce41be75751d7ae8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa">truth_pair_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#aecfc71055e763ecce41be75751d7ae8b">get_new</a> (<a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html">AtomicBoolTerm</a> *abt)</td></tr>
+<tr class="memdesc:aecfc71055e763ecce41be75751d7ae8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a new <code>truth_pair_t</code> made from a pointer of an <code><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html" title="An atomic and thus elemental algebraic bool term.">AtomicBoolTerm</a></code>.  <br /></td></tr>
+<tr class="separator:aecfc71055e763ecce41be75751d7ae8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a2a9bf02a4eb93dbbf65780e07eecc" id="r_aa9a2a9bf02a4eb93dbbf65780e07eecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#aa9a2a9bf02a4eb93dbbf65780e07eecc">eval</a> (const <a class="el" href="../../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa">truth_pair_t</a> &amp;tp)</td></tr>
+<tr class="memdesc:aa9a2a9bf02a4eb93dbbf65780e07eecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a <code>truth_pair_t</code>  <br /></td></tr>
 <tr class="separator:aa9a2a9bf02a4eb93dbbf65780e07eecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -472,6 +474,17 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Evaluate a <code>truth_pair_t</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tp</td><td>The truth pair with the values of the keys of the bool value dict already set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of evaluation </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d39/bool__lazy_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../da/d39/bool__lazy_8cpp_source.html">bool_lazy.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a8d18992243b77db95c02a39bdc612708" name="a8d18992243b77db95c02a39bdc612708"></a>
@@ -510,8 +523,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="ad53879f4da1e0ca5edbe03ff8af4316c" name="ad53879f4da1e0ca5edbe03ff8af4316c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad53879f4da1e0ca5edbe03ff8af4316c">&#9670;&#160;</a></span>get_new()</h2>
+<a id="aecfc71055e763ecce41be75751d7ae8b" name="aecfc71055e763ecce41be75751d7ae8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfc71055e763ecce41be75751d7ae8b">&#9670;&#160;</a></span>get_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,12 +532,24 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa">truth_pair_t</a> &amp; truth::get_new </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html">AtomicBoolTerm</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html">AtomicBoolTerm</a> *&#160;</td>
           <td class="paramname"><em>abt</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get a new <code>truth_pair_t</code> made from a pointer of an <code><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html" title="An atomic and thus elemental algebraic bool term.">AtomicBoolTerm</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abt</td><td>The pointer to an <code><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html" title="An atomic and thus elemental algebraic bool term.">AtomicBoolTerm</a></code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>truth_pair_t</code> with all keys of the dict already set. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You may also call <code>truth::get_new( new AtomicBoolTerm(expr) );</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d39/bool__lazy_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../da/d39/bool__lazy_8cpp_source.html">bool_lazy.cpp</a>.</p>
 
 </div>
 </div>
