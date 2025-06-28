@@ -6,7 +6,6 @@ var classtruth_1_1EvaluationExam =
     [ "evaluate_all_groups", "d5/deb/classtruth_1_1EvaluationExam.html#a50202f6f6747459e8afdd9093c873a39", null ],
     [ "evaluate_exam", "d5/deb/classtruth_1_1EvaluationExam.html#a810d2ff014dcf851c47e8e90835ee422", null ],
     [ "evaluate_group", "d5/deb/classtruth_1_1EvaluationExam.html#a9107add123f976d65a202f1e96455f37", null ],
-    [ "is_complete", "d5/deb/classtruth_1_1EvaluationExam.html#a4ed1a495e2609e4d23329d5232615ac5", null ],
     [ "is_evaluated", "d5/deb/classtruth_1_1EvaluationExam.html#a6a23c432c17e0e77f944c0ae551bc105", null ],
     [ "EvaluationGroup", "d5/deb/classtruth_1_1EvaluationExam.html#a06c8f6b1fe57f45eaf74ab80c815619c", null ],
     [ "Evaluator", "d5/deb/classtruth_1_1EvaluationExam.html#a4ceea777a33ef19332d271c60d245f1f", null ],

@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libtruth<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">libtruth<span id="projectnumber">&#160;0.1.1</span>
    </div>
    <div id="projectbrief">Basic and general concepts for truth evaluation with C++ from OnePointer UG</div>
   </td>
@@ -126,12 +126,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0606e72b0d3323a1a24de72b9a997d8a" id="r_a0606e72b0d3323a1a24de72b9a997d8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html#a0606e72b0d3323a1a24de72b9a997d8a">AtomicBoolTerm</a> (const <a class="el" href="../../d4/d7c/namespacetruth.html#a6bd0527c679df9851e39b1ed23db3614">atomic_terms_t</a> &amp;bool_expr)</td></tr>
 <tr class="memdesc:a0606e72b0d3323a1a24de72b9a997d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a0606e72b0d3323a1a24de72b9a997d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3cbbda34cc87021580f99327f595b0a" id="r_ae3cbbda34cc87021580f99327f595b0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html#ae3cbbda34cc87021580f99327f595b0a">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;args)</td></tr>
-<tr class="memdesc:ae3cbbda34cc87021580f99327f595b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the atomic term with a vector that gives the truth values of all trivial variables of the algebraic term.  <br /></td></tr>
-<tr class="separator:ae3cbbda34cc87021580f99327f595b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef94a2672bea9d46c32caa5d57e3492" id="r_a6ef94a2672bea9d46c32caa5d57e3492"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html#a6ef94a2672bea9d46c32caa5d57e3492">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;args, const <a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> *evaluator)</td></tr>
-<tr class="memdesc:a6ef94a2672bea9d46c32caa5d57e3492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the atomic term with a vector that gives the truth values of all trivial variables of the algebraic term.  <br /></td></tr>
-<tr class="separator:a6ef94a2672bea9d46c32caa5d57e3492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa739ab98c5f753791f2d9a84c2bd86bb" id="r_aa739ab98c5f753791f2d9a84c2bd86bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html#aa739ab98c5f753791f2d9a84c2bd86bb">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;args) const</td></tr>
+<tr class="memdesc:aa739ab98c5f753791f2d9a84c2bd86bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the atomic term with a vector that gives the truth values of all trivial variables of the algebraic term.  <br /></td></tr>
+<tr class="separator:aa739ab98c5f753791f2d9a84c2bd86bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3813d60fd29161cd44a76708e23a1a" id="r_acb3813d60fd29161cd44a76708e23a1a"><td class="memTemplParams" colspan="2">template&lt;typename B &gt; <br />
+requires is_bool_evaluatable&lt; B &gt;</td></tr>
+<tr class="memitem:acb3813d60fd29161cd44a76708e23a1a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html#acb3813d60fd29161cd44a76708e23a1a">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; B &gt; &amp;args) const</td></tr>
+<tr class="memdesc:acb3813d60fd29161cd44a76708e23a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the atomic term with a vector that gives the truth values of all trivial variables of the algebraic term.  <br /></td></tr>
+<tr class="separator:acb3813d60fd29161cd44a76708e23a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -146,7 +148,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>An atomic and thus elemental algebraic bool term. </p>
 <dl class="section note"><dt>Note</dt><dd>Atomic terms are small and comprehensivly cumultative terms of an algebraic, even algebraic-logicly, greater expression. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aee91af74f11737f21ba14bddec02e367" name="aee91af74f11737f21ba14bddec02e367"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee91af74f11737f21ba14bddec02e367">&#9670;&#160;</a></span>AtomicBoolTerm() <span class="overload">[1/3]</span></h2>
@@ -172,7 +174,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +202,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
 
 </div>
 </div>
@@ -228,13 +230,53 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3cbbda34cc87021580f99327f595b0a" name="ae3cbbda34cc87021580f99327f595b0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3cbbda34cc87021580f99327f595b0a">&#9670;&#160;</a></span>eval() <span class="overload">[1/2]</span></h2>
+<a id="acb3813d60fd29161cd44a76708e23a1a" name="acb3813d60fd29161cd44a76708e23a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3813d60fd29161cd44a76708e23a1a">&#9670;&#160;</a></span>eval() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename B &gt; <br />
+requires is_bool_evaluatable&lt; B &gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool truth::AtomicBoolTerm::eval </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; B &gt; &amp;&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate the atomic term with a vector that gives the truth values of all trivial variables of the algebraic term. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>A bool dict with all variables set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The evaluated truth for the algebraic expression with the values of the parameter dict. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00059">59</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa739ab98c5f753791f2d9a84c2bd86bb" name="aa739ab98c5f753791f2d9a84c2bd86bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa739ab98c5f753791f2d9a84c2bd86bb">&#9670;&#160;</a></span>eval() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +286,7 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -258,45 +300,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The evaluated truth for the algebraic expression with the values of the parameter dict. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a6ef94a2672bea9d46c32caa5d57e3492" name="a6ef94a2672bea9d46c32caa5d57e3492"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ef94a2672bea9d46c32caa5d57e3492">&#9670;&#160;</a></span>eval() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool truth::AtomicBoolTerm::eval </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> *&#160;</td>
-          <td class="paramname"><em>evaluator</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Evaluate the atomic term with a vector that gives the truth values of all trivial variables of the algebraic term. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">args</td><td>A bool dict with all variables set. </td></tr>
-    <tr><td class="paramname">evaluator</td><td>An evaluator from the algebraic evaluation library part. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The evaluated truth for the algebraic expression with the values of the parameter dict. </dd></dl>
+<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +319,7 @@ Public Attributes</h2></td></tr>
 
 <p>atomic bool expression like "a&amp;&amp;b || b" </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +337,7 @@ Public Attributes</h2></td></tr>
 
 <p>Hierarichal evaluation synonym for evaluation by operator and brackets. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../d6/dff/bool__atomic__term_8hpp_source.html">bool_atomic_term.hpp</a>.</p>
 
 </div>
 </div>

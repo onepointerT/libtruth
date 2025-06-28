@@ -43,7 +43,6 @@ var namespacetruth =
       [ "OPERATOR", "d4/d7c/namespacetruth.html#a66b0663e1c1bf4a71c46a56868411c4fa55db182a9f638ea02eb93c716945705f", null ],
       [ "BRACKETTERM", "d4/d7c/namespacetruth.html#a66b0663e1c1bf4a71c46a56868411c4fa4cb4deeefc5015c8f98eec1e4d209750", null ]
     ] ],
-    [ "eval", "d4/d7c/namespacetruth.html#af830ff4973dba9f9b781cd14657480c5", null ],
     [ "eval", "d4/d7c/namespacetruth.html#aa9a2a9bf02a4eb93dbbf65780e07eecc", null ],
     [ "eval_expression_if_possible", "d4/d7c/namespacetruth.html#a8d18992243b77db95c02a39bdc612708", null ],
     [ "get_new", "d4/d7c/namespacetruth.html#ad53879f4da1e0ca5edbe03ff8af4316c", null ],

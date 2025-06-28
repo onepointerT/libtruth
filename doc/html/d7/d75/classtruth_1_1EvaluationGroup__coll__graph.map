@@ -1,6 +1,6 @@
 <map id="truth::EvaluationGroup" name="truth::EvaluationGroup">
-<area shape="rect" id="Node000001" title=" " alt="" coords="157,196,326,221"/>
-<area shape="rect" id="Node000003" href="$d5/deb/classtruth_1_1EvaluationExam.html" title=" " alt="" coords="86,284,253,309"/>
+<area shape="rect" id="Node000001" title="A group of algebraic (maybe disjunct) evaluation algebra." alt="" coords="157,196,326,221"/>
+<area shape="rect" id="Node000003" href="$d5/deb/classtruth_1_1EvaluationExam.html" title="The evaluation exam to build and investigate on smaller and greater contexts of logic&#45;arithmetic expr..." alt="" coords="86,284,253,309"/>
 <area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="232,235,214,262,188,286,184,282,210,258,228,232"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="178,93,366,133"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,147,248,196,243,195,259,145"/>

@@ -64,8 +64,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d7/dab/bool__algebraic__bind_8cpp.html",
-"dd/d55/classtruth_1_1AlgebraicBind.html#ad53fa6e5f7aa96d54f4fe16fea58672a"
+"d7/dab/bool__algebraic__bind_8cpp_source.html",
+"dd/d55/classtruth_1_1AlgebraicBind.html#aef11d8fc6feb20b05cc188ec60adce43"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

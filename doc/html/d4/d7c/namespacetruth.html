@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libtruth<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">libtruth<span id="projectnumber">&#160;0.1.1</span>
    </div>
    <div id="projectbrief">Basic and general concepts for truth evaluation with C++ from OnePointer UG</div>
   </td>
@@ -128,8 +128,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The functionality a bool value of this library has, a simple <code>enum class</code> with transformation and assignment operators.  <a href="../../d6/de8/classtruth_1_1BoolValue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html">EvaluationExam</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The evaluation exam to build and investigate on smaller and greater contexts of logic-arithmetic expressions.  <a href="../../d5/deb/classtruth_1_1EvaluationExam.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d94/classtruth_1_1EvaluationGroup.html">EvaluationGroup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A group of algebraic (maybe disjunct) evaluation algebra.  <a href="../../d7/d94/classtruth_1_1EvaluationGroup.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +157,7 @@ Concepts</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac18ee9ef10e1216eea7c101eb5ba1531" id="r_ac18ee9ef10e1216eea7c101eb5ba1531"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; bool, <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#ac18ee9ef10e1216eea7c101eb5ba1531">evaluated_truth_t</a></td></tr>
+<tr class="memdesc:ac18ee9ef10e1216eea7c101eb5ba1531"><td class="mdescLeft">&#160;</td><td class="mdescRight">The truth type, that also remembers the operator on the right side of the bool.  <br /></td></tr>
 <tr class="separator:ac18ee9ef10e1216eea7c101eb5ba1531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a050a174607fb0946cd1cc3eefee32986" id="r_a050a174607fb0946cd1cc3eefee32986"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html">AtomicBoolTerm</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#a050a174607fb0946cd1cc3eefee32986">atomic_bool_ptr</a></td></tr>
 <tr class="memdesc:a050a174607fb0946cd1cc3eefee32986"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <code>shared_ptr&lt;<a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html" title="An atomic and thus elemental algebraic bool term.">AtomicBoolTerm</a>&gt;</code> for the further use in function.  <br /></td></tr>
@@ -218,8 +221,6 @@ Functions</h2></td></tr>
 <tr class="separator:ae59b36b617759dfbdc4b3aef8598e497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d18992243b77db95c02a39bdc612708" id="r_a8d18992243b77db95c02a39bdc612708"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#a8d18992243b77db95c02a39bdc612708">eval_expression_if_possible</a> (const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;expr, const oneptr::queue&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> &gt; terms, <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;result)</td></tr>
 <tr class="separator:a8d18992243b77db95c02a39bdc612708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af830ff4973dba9f9b781cd14657480c5" id="r_af830ff4973dba9f9b781cd14657480c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#af830ff4973dba9f9b781cd14657480c5">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;args, const <a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> *evaluator)</td></tr>
-<tr class="separator:af830ff4973dba9f9b781cd14657480c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53879f4da1e0ca5edbe03ff8af4316c" id="r_ad53879f4da1e0ca5edbe03ff8af4316c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa">truth_pair_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#ad53879f4da1e0ca5edbe03ff8af4316c">get_new</a> (const <a class="el" href="../../d7/d5c/classtruth_1_1AtomicBoolTerm.html">AtomicBoolTerm</a> *abt)</td></tr>
 <tr class="separator:ad53879f4da1e0ca5edbe03ff8af4316c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a2a9bf02a4eb93dbbf65780e07eecc" id="r_aa9a2a9bf02a4eb93dbbf65780e07eecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/namespacetruth.html#aa9a2a9bf02a4eb93dbbf65780e07eecc">eval</a> (const <a class="el" href="../../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa">truth_pair_t</a> &amp;tp)</td></tr>
@@ -356,7 +357,9 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p>The truth type, that also remembers the operator on the right side of the bool. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,38 +456,8 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af830ff4973dba9f9b781cd14657480c5" name="af830ff4973dba9f9b781cd14657480c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af830ff4973dba9f9b781cd14657480c5">&#9670;&#160;</a></span>eval() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool truth::eval </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> *&#160;</td>
-          <td class="paramname"><em>evaluator</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../dd/d86/bool__atomic__term_8cpp_source.html">bool_atomic_term.cpp</a>.</p>
-
-</div>
-</div>
 <a id="aa9a2a9bf02a4eb93dbbf65780e07eecc" name="aa9a2a9bf02a4eb93dbbf65780e07eecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9a2a9bf02a4eb93dbbf65780e07eecc">&#9670;&#160;</a></span>eval() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a2a9bf02a4eb93dbbf65780e07eecc">&#9670;&#160;</a></span>eval()</h2>
 
 <div class="memitem">
 <div class="memproto">

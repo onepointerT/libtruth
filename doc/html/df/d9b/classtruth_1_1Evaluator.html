@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">libtruth<span id="projectnumber">&#160;0.0.1</span>
+   <div id="projectname">libtruth<span id="projectnumber">&#160;0.1.1</span>
    </div>
    <div id="projectbrief">Basic and general concepts for truth evaluation with C++ from OnePointer UG</div>
   </td>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('df/d9b/classtruth_1_1Evaluator.html','
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../de/dbf/classtruth_1_1Evaluator-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">truth::Evaluator Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+  <div class="headertitle"><div class="title">truth::Evaluator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -128,45 +128,60 @@ Collaboration diagram for truth::Evaluator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a06a68cacd5cd0cb7050270ea32492316" id="r_a06a68cacd5cd0cb7050270ea32492316"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a06a68cacd5cd0cb7050270ea32492316">Evaluator</a> ()</td></tr>
+<tr class="memdesc:a06a68cacd5cd0cb7050270ea32492316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a06a68cacd5cd0cb7050270ea32492316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a633816d4c1b79b487dc911ca9dcf4d41" id="r_a633816d4c1b79b487dc911ca9dcf4d41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a633816d4c1b79b487dc911ca9dcf4d41">Evaluator</a> (<a class="el" href="../../d6/d97/classtruth_1_1BoolType.html">BoolType</a> &amp;bool_type)</td></tr>
+<tr class="memdesc:a633816d4c1b79b487dc911ca9dcf4d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Copy-constructs (by-reference) from <code>bool_type</code>  <br /></td></tr>
 <tr class="separator:a633816d4c1b79b487dc911ca9dcf4d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ccb6f8e806a226bfb83112ff90b04a" id="r_a45ccb6f8e806a226bfb83112ff90b04a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a45ccb6f8e806a226bfb83112ff90b04a">operator&lt;&lt;</a> (const std::string algebraic_logic_expression)</td></tr>
+<tr class="memitem:a45ccb6f8e806a226bfb83112ff90b04a" id="r_a45ccb6f8e806a226bfb83112ff90b04a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a45ccb6f8e806a226bfb83112ff90b04a">operator&lt;&lt;</a> (const std::string algebraic_logic_expression)</td></tr>
+<tr class="memdesc:a45ccb6f8e806a226bfb83112ff90b04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append some logical-algebraic expression to the current <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> expr</code>  <br /></td></tr>
 <tr class="separator:a45ccb6f8e806a226bfb83112ff90b04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19e4f9cf5146bcce4c07d68955065b2" id="r_ae19e4f9cf5146bcce4c07d68955065b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#ae19e4f9cf5146bcce4c07d68955065b2">set_expr</a> (const std::string algebraic_logic_expression)</td></tr>
+<tr class="memitem:ae19e4f9cf5146bcce4c07d68955065b2" id="r_ae19e4f9cf5146bcce4c07d68955065b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#ae19e4f9cf5146bcce4c07d68955065b2">set_expr</a> (const std::string algebraic_logic_expression)</td></tr>
+<tr class="memdesc:ae19e4f9cf5146bcce4c07d68955065b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set some logical-algebraic expression to the current <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> expr</code>  <br /></td></tr>
 <tr class="separator:ae19e4f9cf5146bcce4c07d68955065b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10b63853a69714d514414ab8cdaad503" id="r_a10b63853a69714d514414ab8cdaad503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a10b63853a69714d514414ab8cdaad503">clear_expr</a> ()</td></tr>
+<tr class="memitem:a10b63853a69714d514414ab8cdaad503" id="r_a10b63853a69714d514414ab8cdaad503"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a10b63853a69714d514414ab8cdaad503">clear_expr</a> ()</td></tr>
+<tr class="memdesc:a10b63853a69714d514414ab8cdaad503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the current <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> expr</code>.  <br /></td></tr>
 <tr class="separator:a10b63853a69714d514414ab8cdaad503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89823338c36caf9f5b521c9aff926b9e" id="r_a89823338c36caf9f5b521c9aff926b9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a89823338c36caf9f5b521c9aff926b9e">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;bd)</td></tr>
+<tr class="memitem:a89823338c36caf9f5b521c9aff926b9e" id="r_a89823338c36caf9f5b521c9aff926b9e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a89823338c36caf9f5b521c9aff926b9e">eval</a> (const <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;bd)</td></tr>
+<tr class="memdesc:a89823338c36caf9f5b521c9aff926b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate everything with a <code><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html" title="A bool value dict. The truth values are ordered by a const std::string, for example for correspondenc...">BoolDict</a>&lt;<a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a>&gt;</code> that holds correspondence values for unique variable names.  <br /></td></tr>
 <tr class="separator:a89823338c36caf9f5b521c9aff926b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d93fae6a308da1188eb758503a10148" id="r_a1d93fae6a308da1188eb758503a10148"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a1d93fae6a308da1188eb758503a10148">getDict</a> () const</td></tr>
+<tr class="memitem:a1d93fae6a308da1188eb758503a10148" id="r_a1d93fae6a308da1188eb758503a10148"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a1d93fae6a308da1188eb758503a10148">getDict</a> () const</td></tr>
+<tr class="memdesc:a1d93fae6a308da1188eb758503a10148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <code><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html" title="A bool value dict. The truth values are ordered by a const std::string, for example for correspondenc...">BoolDict</a>&lt;<a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a>&gt;</code> with all variables set to <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54cadd63241916551f14a72df17999e5aa54">BoolValue::None</a></code> until filled with semantics by the business client.  <br /></td></tr>
 <tr class="separator:a1d93fae6a308da1188eb758503a10148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3955a90fa16f89ee3ced0a340ceee3e7" id="r_a3955a90fa16f89ee3ced0a340ceee3e7"><td class="memItemLeft" align="right" valign="top">const oneptr::queue&lt; <a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html">EvaluationExam</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a3955a90fa16f89ee3ced0a340ceee3e7">get_exams</a> () const</td></tr>
+<tr class="memdesc:a3955a90fa16f89ee3ced0a340ceee3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all <code><a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html" title="The evaluation exam to build and investigate on smaller and greater contexts of logic-arithmetic expr...">EvaluationExam</a></code>s of this evaluator.  <br /></td></tr>
 <tr class="separator:a3955a90fa16f89ee3ced0a340ceee3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67c2b9ec46867cf9323d4e9bb804e46" id="r_ad67c2b9ec46867cf9323d4e9bb804e46"><td class="memItemLeft" align="right" valign="top">const oneptr::queue&lt; <a class="el" href="../../d7/d94/classtruth_1_1EvaluationGroup.html">EvaluationGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#ad67c2b9ec46867cf9323d4e9bb804e46">get_groups</a> () const</td></tr>
+<tr class="memdesc:ad67c2b9ec46867cf9323d4e9bb804e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all <code><a class="el" href="../../d7/d94/classtruth_1_1EvaluationGroup.html" title="A group of algebraic (maybe disjunct) evaluation algebra.">EvaluationGroup</a></code>s of this evaluator.  <br /></td></tr>
 <tr class="separator:ad67c2b9ec46867cf9323d4e9bb804e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4a7b909463184b3e817774ace3685b" id="r_a7d4a7b909463184b3e817774ace3685b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a7d4a7b909463184b3e817774ace3685b">clear</a> ()</td></tr>
+<tr class="memdesc:a7d4a7b909463184b3e817774ace3685b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear <code>this-&gt;exams</code> and <code>this-&gt;groups</code>  <br /></td></tr>
 <tr class="separator:a7d4a7b909463184b3e817774ace3685b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9749a51a69e71bc9e32591955036b18f" id="r_a9749a51a69e71bc9e32591955036b18f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d97/classtruth_1_1BoolType.html">BoolType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a9749a51a69e71bc9e32591955036b18f">type</a></td></tr>
+<tr class="memdesc:a9749a51a69e71bc9e32591955036b18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code><a class="el" href="../../d6/d97/classtruth_1_1BoolType.html" title="The trivial and enhanced bool type of this library.">BoolType</a></code> of this evaluator.  <br /></td></tr>
 <tr class="separator:a9749a51a69e71bc9e32591955036b18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5419d91cf393b59297e321ee03ca033" id="r_aa5419d91cf393b59297e321ee03ca033"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#aa5419d91cf393b59297e321ee03ca033">value</a></td></tr>
+<tr class="memdesc:aa5419d91cf393b59297e321ee03ca033"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a></code> of this evaluator.  <br /></td></tr>
 <tr class="separator:aa5419d91cf393b59297e321ee03ca033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b03a36978af6a8e9f61729bc763d47a" id="r_a5b03a36978af6a8e9f61729bc763d47a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a5b03a36978af6a8e9f61729bc763d47a">expr</a></td></tr>
+<tr class="memdesc:a5b03a36978af6a8e9f61729bc763d47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code> of this evaluator.  <br /></td></tr>
 <tr class="separator:a5b03a36978af6a8e9f61729bc763d47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a6d3074040cfc6b9065b5854f0842639a" id="r_a6d3074040cfc6b9065b5854f0842639a"><td class="memItemLeft" align="right" valign="top">oneptr::queue&lt; <a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html">EvaluationExam</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a6d3074040cfc6b9065b5854f0842639a">exams</a></td></tr>
+<tr class="memdesc:a6d3074040cfc6b9065b5854f0842639a"><td class="mdescLeft">&#160;</td><td class="mdescRight">All <code><a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html" title="The evaluation exam to build and investigate on smaller and greater contexts of logic-arithmetic expr...">EvaluationExam</a></code>s known to this <code><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a></code>  <br /></td></tr>
 <tr class="separator:a6d3074040cfc6b9065b5854f0842639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd8197e0aed51c7c05ac9cef2fb8b0d" id="r_a1bd8197e0aed51c7c05ac9cef2fb8b0d"><td class="memItemLeft" align="right" valign="top">oneptr::queue&lt; <a class="el" href="../../d7/d94/classtruth_1_1EvaluationGroup.html">EvaluationGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html#a1bd8197e0aed51c7c05ac9cef2fb8b0d">groups</a></td></tr>
+<tr class="memdesc:a1bd8197e0aed51c7c05ac9cef2fb8b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">All <code>EvaluationGroups</code>s known to this <code><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a></code>  <br /></td></tr>
 <tr class="separator:a1bd8197e0aed51c7c05ac9cef2fb8b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00153">153</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a06a68cacd5cd0cb7050270ea32492316" name="a06a68cacd5cd0cb7050270ea32492316"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06a68cacd5cd0cb7050270ea32492316">&#9670;&#160;</a></span>Evaluator() <span class="overload">[1/2]</span></h2>
@@ -183,7 +198,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +220,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Constructor. Copy-constructs (by-reference) from <code>bool_type</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bool_type</td><td>The <code><a class="el" href="../../d6/d97/classtruth_1_1BoolType.html" title="The trivial and enhanced bool type of this library.">BoolType</a></code> to reference and copy-construct </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -223,7 +248,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00231">231</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Clear <code>this-&gt;exams</code> and <code>this-&gt;groups</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00230">230</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -232,6 +259,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void truth::Evaluator::clear_expr </td>
@@ -240,9 +270,16 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Clear the current <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> expr</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,6 +288,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool truth::Evaluator::eval </td>
@@ -260,9 +300,25 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Evaluate everything with a <code><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html" title="A bool value dict. The truth values are ordered by a const std::string, for example for correspondenc...">BoolDict</a>&lt;<a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a>&gt;</code> that holds correspondence values for unique variable names. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bd</td><td>The bool dict to use for evaluation </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result as default C++ <code>bool</code> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You may have your own version of this function in your inheriting classes <br  />
+ </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00145">145</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +337,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Get all <code><a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html" title="The evaluation exam to build and investigate on smaller and greater contexts of logic-arithmetic expr...">EvaluationExam</a></code>s of this evaluator. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <code>oneptr::queue&lt; <a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html" title="The evaluation exam to build and investigate on smaller and greater contexts of logic-arithmetic expr...">EvaluationExam</a> &gt;</code> with the evaluation exams. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00222">222</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +359,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00227">227</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Get all <code><a class="el" href="../../d7/d94/classtruth_1_1EvaluationGroup.html" title="A group of algebraic (maybe disjunct) evaluation algebra.">EvaluationGroup</a></code>s of this evaluator. </p>
+<dl class="section return"><dt>Returns</dt><dd>A <code>oneptr::queue&lt; <a class="el" href="../../d7/d94/classtruth_1_1EvaluationGroup.html" title="A group of algebraic (maybe disjunct) evaluation algebra.">EvaluationGroup</a> &gt;</code> with the evaluation groups. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00226">226</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -309,6 +371,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp; truth::Evaluator::getDict </td>
@@ -317,9 +382,19 @@ Protected Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00212">212</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Get a <code><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html" title="A bool value dict. The truth values are ordered by a const std::string, for example for correspondenc...">BoolDict</a>&lt;<a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a>&gt;</code> with all variables set to <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54cadd63241916551f14a72df17999e5aa54">BoolValue::None</a></code> until filled with semantics by the business client. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to a bool dict with all variables coherently found in <code>this-&gt;groups</code> set to <code>None</code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You may have your own version of this function in your inheriting classes <br  />
+ </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00211">211</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -328,6 +403,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a> &amp; truth::Evaluator::operator&lt;&lt; </td>
@@ -337,9 +415,25 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00125">125</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Append some logical-algebraic expression to the current <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> expr</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">algebraic_logic_expression</td><td>The algebraic logical term to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>*this</code> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You may have your own version of this function in your inheriting classes <br  />
+ </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00132">132</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -348,6 +442,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void truth::Evaluator::set_expr </td>
@@ -357,9 +454,22 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
+<p>Set some logical-algebraic expression to the current <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> expr</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">algebraic_logic_expression</td><td>The algebraic logical term to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html#l00137">137</a> of file <a class="el" href="../../d8/ddb/bool__algebraic__eval_8cpp_source.html">bool_algebraic_eval.cpp</a>.</p>
 
 </div>
 </div>
@@ -384,7 +494,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p>All <code><a class="el" href="../../d5/deb/classtruth_1_1EvaluationExam.html" title="The evaluation exam to build and investigate on smaller and greater contexts of logic-arithmetic expr...">EvaluationExam</a></code>s known to this <code><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a></code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 
 </div>
 </div>
@@ -400,7 +512,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p>The <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code> of this evaluator. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 
 </div>
 </div>
@@ -424,7 +538,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p>All <code>EvaluationGroups</code>s known to this <code><a class="el" href="../../df/d9b/classtruth_1_1Evaluator.html">Evaluator</a></code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00159">159</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +556,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p>The <code><a class="el" href="../../d6/d97/classtruth_1_1BoolType.html" title="The trivial and enhanced bool type of this library.">BoolType</a></code> of this evaluator. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 
 </div>
 </div>
@@ -456,7 +574,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
+<p>The <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a></code> of this evaluator. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../d2/de5/bool__algebraic__eval_8hpp_source.html">bool_algebraic_eval.hpp</a>.</p>
 
 </div>
 </div>
