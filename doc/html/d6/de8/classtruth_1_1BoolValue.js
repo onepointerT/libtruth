@@ -4,6 +4,7 @@ var classtruth_1_1BoolValue =
     [ "Type", "d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54c", [
       [ "True", "d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54cadc165852f702944b1a4e6dadd6a0ad0e", null ],
       [ "False", "d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54caf704a8998e62986b168fbdfa5c771308", null ],
+      [ "Unknown", "d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54ca407ffe45b1c704dda8c069a252a8ae90", null ],
       [ "None", "d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54cadd63241916551f14a72df17999e5aa54", null ]
     ] ],
     [ "BoolValue", "d6/de8/classtruth_1_1BoolValue.html#a30fd22af6c455e8583e8eb090d83843b", null ],

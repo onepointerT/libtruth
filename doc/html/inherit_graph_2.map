@@ -1,5 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,5,92,31"/>
-<area shape="rect" id="Node000001" href="$d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics." alt="" coords="140,5,259,31"/>
-<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="105,15,140,15,140,21,105,21"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,42,84,67"/>
+<area shape="rect" id="Node000001" href="$d6/dcd/classtruth_1_1BoolDict.html" title=" " alt="" coords="132,5,295,45"/>
+<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="97,43,131,37,132,42,98,48"/>
+<area shape="rect" id="Node000002" href="$d6/dcd/classtruth_1_1BoolDict.html" title="A bool value dict. The truth values are ordered by a const std::string, for example for correspondenc..." alt="" coords="136,70,291,95"/>
+<area shape="poly" id="edge4_Node000000_Node000002" title=" " alt="" coords="98,61,137,67,136,73,97,66"/>
 </map>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['term_5ft_0',['term_t',['../d6/d97/classtruth_1_1BoolType.html#a6ad93ac451ca27580e910248403fb9f4',1,'truth::BoolType']]],
-  ['truth_5fpair_5ft_1',['truth_pair_t',['../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa',1,'truth']]]
+  ['self_5ft_0',['self_t',['../d6/dcd/classtruth_1_1BoolDict.html#a214039622fe433e02cf19806662091c7',1,'truth::BoolDict::self_t'],['../d8/d7e/classtruth_1_1Tree.html#aa747a8db3de3cf6994cc1565aa5f39ac',1,'truth::Tree::self_t']]],
+  ['small_5fterm_5fqueue_5ft_1',['small_term_queue_t',['../d6/d97/classtruth_1_1BoolType.html#a27e74e6493a4dc83d570d603353ba84d',1,'truth::BoolType']]],
+  ['small_5fterm_5ft_2',['small_term_t',['../d9/d46/classtruth_1_1AlgebraicSmallTerm.html#a5141d3d49955fde82198cb5a761cda63',1,'truth::AlgebraicSmallTerm::small_term_t'],['../d6/d97/classtruth_1_1BoolType.html#a76385d61a3a0f85b1dac6517d79ebde3',1,'truth::BoolType::small_term_t']]]
 ];

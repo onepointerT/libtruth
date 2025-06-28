@@ -8,5 +8,6 @@ var bool__value__dict_8hpp =
     [ "TRUTH_BOOL_FALSE", "d4/d60/bool__value__dict_8hpp.html#a0db9f58e846e5be2c3063fc0d0b10215", null ],
     [ "TRUTH_BOOL_NONE", "d4/d60/bool__value__dict_8hpp.html#a6708bdb4ed3968725801547763e897ca", null ],
     [ "TRUTH_BOOL_TRUE", "d4/d60/bool__value__dict_8hpp.html#abaaa4aa1fbe49cfe0e21f3a6c7b302d6", null ],
+    [ "TRUTH_BOOL_UNKNOWN", "d4/d60/bool__value__dict_8hpp.html#a879fe42af1ba0970e8b957793904fe0a", null ],
     [ "add_lvalue_reference_t", "d4/d60/bool__value__dict_8hpp.html#a6501ca5e017e0ecacf5b802f23e767b2", null ]
 ];

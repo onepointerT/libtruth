@@ -92,7 +92,10 @@ $(document).ready(function(){initNavTree('dd/d55/classtruth_1_1AlgebraicBind.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d8/d88/classtruth_1_1AlgebraicBind-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">truth::AlgebraicBind Class Reference</div></div>
 </div><!--header-->
@@ -102,23 +105,71 @@ $(document).ready(function(){initNavTree('dd/d55/classtruth_1_1AlgebraicBind.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acaaf98dfd319bbd3458f8653451663c5" id="r_acaaf98dfd319bbd3458f8653451663c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">typedef</a> std::pair&lt; <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>, <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#acaaf98dfd319bbd3458f8653451663c5">expr_t</a></td></tr>
-<tr class="memdesc:acaaf98dfd319bbd3458f8653451663c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basic type with a left and a right expression that can be matched with operators.  <br /></td></tr>
-<tr class="separator:acaaf98dfd319bbd3458f8653451663c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb5acbc949f3e5894f89d96e5d814ea" id="r_a8cb5acbc949f3e5894f89d96e5d814ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">typedef</a> std::pair&lt; <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#acaaf98dfd319bbd3458f8653451663c5">expr_t</a>, <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a></td></tr>
+<tr class="memitem:ab58d6e21e8ba64ad10f3377ba64d06c1" id="r_ab58d6e21e8ba64ad10f3377ba64d06c1"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;, <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#ab58d6e21e8ba64ad10f3377ba64d06c1">expr_t</a></td></tr>
+<tr class="memdesc:ab58d6e21e8ba64ad10f3377ba64d06c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basic type with a left and a right expression that can be matched with operators.  <br /></td></tr>
+<tr class="separator:ab58d6e21e8ba64ad10f3377ba64d06c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb5acbc949f3e5894f89d96e5d814ea" id="r_a8cb5acbc949f3e5894f89d96e5d814ea"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; const <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#ab58d6e21e8ba64ad10f3377ba64d06c1">expr_t</a>, const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a></td></tr>
 <tr class="memdesc:a8cb5acbc949f3e5894f89d96e5d814ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basic type that matches and <code>expr_t</code> with a <code><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html" title="The basic functionality class that can handle all supported operators, when they have one or two oper...">BoolOperator</a></code>.  <br /></td></tr>
 <tr class="separator:a8cb5acbc949f3e5894f89d96e5d814ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2378a7e04ebb854a9cec5b555591f6ad" id="r_a2378a7e04ebb854a9cec5b555591f6ad"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;, <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">truth_t</a></td></tr>
+<tr class="separator:a2378a7e04ebb854a9cec5b555591f6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a159aca445343e350fac6f57055d1d54d" id="r_a159aca445343e350fac6f57055d1d54d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a159aca445343e350fac6f57055d1d54d">AlgebraicBind</a> (const std::string expr_left, const std::string expr_right, const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> op)</td></tr>
+<tr class="memdesc:a159aca445343e350fac6f57055d1d54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a159aca445343e350fac6f57055d1d54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f213be0ecd6009aa308d77d893d504" id="r_a51f213be0ecd6009aa308d77d893d504"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a51f213be0ecd6009aa308d77d893d504">AlgebraicBind</a> (<a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;expr_left, <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;expr_right, const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> op)</td></tr>
+<tr class="memdesc:a51f213be0ecd6009aa308d77d893d504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a51f213be0ecd6009aa308d77d893d504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5e50625464fa30862ae7c196ddf5e3" id="r_a5a5e50625464fa30862ae7c196ddf5e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a5a5e50625464fa30862ae7c196ddf5e3">AlgebraicBind</a> (<a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a> &amp;bindval)</td></tr>
+<tr class="memdesc:a5a5e50625464fa30862ae7c196ddf5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
+<tr class="separator:a5a5e50625464fa30862ae7c196ddf5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537a45942f6a3c6bf78e759864832ecb" id="r_a537a45942f6a3c6bf78e759864832ecb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a537a45942f6a3c6bf78e759864832ecb">eval</a> () const</td></tr>
+<tr class="memdesc:a537a45942f6a3c6bf78e759864832ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the <code>truth_t</code> value of <code>this-&gt;truth</code> with the operator.  <br /></td></tr>
+<tr class="separator:a537a45942f6a3c6bf78e759864832ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53fa6e5f7aa96d54f4fe16fea58672a" id="r_ad53fa6e5f7aa96d54f4fe16fea58672a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#ad53fa6e5f7aa96d54f4fe16fea58672a">string</a> () const</td></tr>
+<tr class="memdesc:ad53fa6e5f7aa96d54f4fe16fea58672a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the expression of this algebraic bind.  <br /></td></tr>
+<tr class="separator:ad53fa6e5f7aa96d54f4fe16fea58672a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169ccccd1bb6d7900d5a393a144c3506" id="r_a169ccccd1bb6d7900d5a393a144c3506"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a169ccccd1bb6d7900d5a393a144c3506">small_terms_left</a> () const</td></tr>
+<tr class="memdesc:a169ccccd1bb6d7900d5a393a144c3506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all small terms of found in <code>value.first</code>  <br /></td></tr>
+<tr class="separator:a169ccccd1bb6d7900d5a393a144c3506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06a8087f819e73f5389452f93defeb2" id="r_ae06a8087f819e73f5389452f93defeb2"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#ae06a8087f819e73f5389452f93defeb2">small_terms_right</a> () const</td></tr>
+<tr class="memdesc:ae06a8087f819e73f5389452f93defeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all small terms of found in <code>value.first</code>  <br /></td></tr>
+<tr class="separator:ae06a8087f819e73f5389452f93defeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2c7ef87ae38da2fc06a77dd473e911" id="r_abf2c7ef87ae38da2fc06a77dd473e911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#abf2c7ef87ae38da2fc06a77dd473e911">push_evaluated_small_term</a> (<a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> *ast)</td></tr>
+<tr class="separator:abf2c7ef87ae38da2fc06a77dd473e911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2a45890347caefddca4f734bbc1824" id="r_a0c2a45890347caefddca4f734bbc1824"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a0c2a45890347caefddca4f734bbc1824">eval_if_possible</a> ()</td></tr>
+<tr class="separator:a0c2a45890347caefddca4f734bbc1824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aecda2959cbd39e2b256aad9e8665498a" id="r_aecda2959cbd39e2b256aad9e8665498a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">static</a> <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#aecda2959cbd39e2b256aad9e8665498a">evalbool</a> (<a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a> expr, <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;<a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">bd</a>)</td></tr>
-<tr class="separator:aecda2959cbd39e2b256aad9e8665498a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263afeb0fdabd3a0d543dbf34b06d9a2" id="r_a263afeb0fdabd3a0d543dbf34b06d9a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">static</a> <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a263afeb0fdabd3a0d543dbf34b06d9a2">fillDict</a> (<a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a> expr, <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;<a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">bd</a>)</td></tr>
-<tr class="separator:a263afeb0fdabd3a0d543dbf34b06d9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea53f97c6ac82f8cd75240caa1909acc" id="r_aea53f97c6ac82f8cd75240caa1909acc"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#aea53f97c6ac82f8cd75240caa1909acc">small_terms</a> (const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;expr)</td></tr>
+<tr class="memdesc:aea53f97c6ac82f8cd75240caa1909acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all small terms of found in <code>expr</code>  <br /></td></tr>
+<tr class="separator:aea53f97c6ac82f8cd75240caa1909acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb870d69789d8b34159766ca00a7e07" id="r_a9eb870d69789d8b34159766ca00a7e07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a9eb870d69789d8b34159766ca00a7e07">fillDict</a> (const <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a> expr, <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;bd)</td></tr>
+<tr class="memdesc:a9eb870d69789d8b34159766ca00a7e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the dict <code>bd</code> with all variables of expr.  <br /></td></tr>
+<tr class="separator:a9eb870d69789d8b34159766ca00a7e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7040d5abac94e541d911bfc917e0b2" id="r_a9f7040d5abac94e541d911bfc917e0b2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a9f7040d5abac94e541d911bfc917e0b2">eval_expression_if_possible</a> (const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;expr, const oneptr::queue&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> &gt; terms, <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;result)</td></tr>
+<tr class="separator:a9f7040d5abac94e541d911bfc917e0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aef11d8fc6feb20b05cc188ec60adce43" id="r_aef11d8fc6feb20b05cc188ec60adce43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#aef11d8fc6feb20b05cc188ec60adce43">value</a></td></tr>
+<tr class="memdesc:aef11d8fc6feb20b05cc188ec60adce43"><td class="mdescLeft">&#160;</td><td class="mdescRight">The left and right expression of an operator, thus the operands. May be simple expressions or greater ones.  <br /></td></tr>
+<tr class="separator:aef11d8fc6feb20b05cc188ec60adce43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eca3014ec577524c28aabc452acb81b" id="r_a2eca3014ec577524c28aabc452acb81b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">truth_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2eca3014ec577524c28aabc452acb81b">truth</a></td></tr>
+<tr class="memdesc:a2eca3014ec577524c28aabc452acb81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The over-all truth value of the expressions, without evaluating them each.  <br /></td></tr>
+<tr class="separator:a2eca3014ec577524c28aabc452acb81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a450bbe66fa9c43ae450fdae885b864f8" id="r_a450bbe66fa9c43ae450fdae885b864f8"><td class="memItemLeft" align="right" valign="top">oneptr::queue&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a450bbe66fa9c43ae450fdae885b864f8">evaluated_terms</a></td></tr>
+<tr class="separator:a450bbe66fa9c43ae450fdae885b864f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8cb5acbc949f3e5894f89d96e5d814ea" name="a8cb5acbc949f3e5894f89d96e5d814ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cb5acbc949f3e5894f89d96e5d814ea">&#9670;&#160;</a></span>bindval_t</h2>
@@ -127,38 +178,197 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">typedef</a> std::pair&lt; <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#acaaf98dfd319bbd3458f8653451663c5">expr_t</a>, <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> &gt; <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">truth::AlgebraicBind::bindval_t</a></td>
+          <td class="memname">typedef std::pair&lt; const <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#ab58d6e21e8ba64ad10f3377ba64d06c1">expr_t</a>, const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> &gt; <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">truth::AlgebraicBind::bindval_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The basic type that matches and <code>expr_t</code> with a <code><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html" title="The basic functionality class that can handle all supported operators, when they have one or two oper...">BoolOperator</a></code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00029">29</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
 
 </div>
 </div>
-<a id="acaaf98dfd319bbd3458f8653451663c5" name="acaaf98dfd319bbd3458f8653451663c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaaf98dfd319bbd3458f8653451663c5">&#9670;&#160;</a></span>expr_t</h2>
+<a id="ab58d6e21e8ba64ad10f3377ba64d06c1" name="ab58d6e21e8ba64ad10f3377ba64d06c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58d6e21e8ba64ad10f3377ba64d06c1">&#9670;&#160;</a></span>expr_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">typedef</a> std::pair&lt; <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>, <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &gt; <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#acaaf98dfd319bbd3458f8653451663c5">truth::AlgebraicBind::expr_t</a></td>
+          <td class="memname">typedef std::pair&lt; <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>&amp;, <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>&amp; &gt; <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#ab58d6e21e8ba64ad10f3377ba64d06c1">truth::AlgebraicBind::expr_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The basic type with a left and a right expression that can be matched with operators. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2378a7e04ebb854a9cec5b555591f6ad" name="a2378a7e04ebb854a9cec5b555591f6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2378a7e04ebb854a9cec5b555591f6ad">&#9670;&#160;</a></span>truth_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::pair&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a>&amp;, <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a>&amp; &gt; <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">truth::AlgebraicBind::truth_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a159aca445343e350fac6f57055d1d54d" name="a159aca445343e350fac6f57055d1d54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159aca445343e350fac6f57055d1d54d">&#9670;&#160;</a></span>AlgebraicBind() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">truth::AlgebraicBind::AlgebraicBind </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>expr_left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>expr_right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a>&#160;</td>
+          <td class="paramname"><em>op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr_left</td><td>The left operand expression </td></tr>
+    <tr><td class="paramname">expr_right</td><td>The right operand expression </td></tr>
+    <tr><td class="paramname">op</td><td>The logic algebra-operator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a51f213be0ecd6009aa308d77d893d504" name="a51f213be0ecd6009aa308d77d893d504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f213be0ecd6009aa308d77d893d504">&#9670;&#160;</a></span>AlgebraicBind() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">truth::AlgebraicBind::AlgebraicBind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr_left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr_right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a>&#160;</td>
+          <td class="paramname"><em>op</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr_left</td><td>The left operand expression </td></tr>
+    <tr><td class="paramname">expr_right</td><td>The right operand expression </td></tr>
+    <tr><td class="paramname">op</td><td>The logic algebra-operator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5a5e50625464fa30862ae7c196ddf5e3" name="a5a5e50625464fa30862ae7c196ddf5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5e50625464fa30862ae7c196ddf5e3">&#9670;&#160;</a></span>AlgebraicBind() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">truth::AlgebraicBind::AlgebraicBind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>bindval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bindval</td><td>The <code>bindval_t</code> to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aecda2959cbd39e2b256aad9e8665498a" name="aecda2959cbd39e2b256aad9e8665498a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecda2959cbd39e2b256aad9e8665498a">&#9670;&#160;</a></span>evalbool()</h2>
+<a id="a537a45942f6a3c6bf78e759864832ecb" name="a537a45942f6a3c6bf78e759864832ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537a45942f6a3c6bf78e759864832ecb">&#9670;&#160;</a></span>eval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool truth::AlgebraicBind::eval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evaluate the <code>truth_t</code> value of <code>this-&gt;truth</code> with the operator. </p>
+<dl class="section return"><dt>Returns</dt><dd><code><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#a6f25f13ac4bdfaf13ed037fcbd967cb5">BoolOperator::eval</a>( truth.first, value.second, truth.second )</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9f7040d5abac94e541d911bfc917e0b2" name="a9f7040d5abac94e541d911bfc917e0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7040d5abac94e541d911bfc917e0b2">&#9670;&#160;</a></span>eval_expression_if_possible()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,16 +377,22 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">static</a> <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">bool</a> truth::AlgebraicBind::evalbool </td>
+          <td class="memname">static bool truth::AlgebraicBind::eval_expression_if_possible </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td>
           <td class="paramname"><em>expr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bd</em>&#160;</td>
+          <td class="paramtype">const oneptr::queue&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> &gt;&#160;</td>
+          <td class="paramname"><em>terms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -190,19 +406,30 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">expr</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><br  />
- </dd></dl>
 
 </div>
 </div>
-<a id="a263afeb0fdabd3a0d543dbf34b06d9a2" name="a263afeb0fdabd3a0d543dbf34b06d9a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a263afeb0fdabd3a0d543dbf34b06d9a2">&#9670;&#160;</a></span>fillDict()</h2>
+<a id="a0c2a45890347caefddca4f734bbc1824" name="a0c2a45890347caefddca4f734bbc1824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2a45890347caefddca4f734bbc1824">&#9670;&#160;</a></span>eval_if_possible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool truth::AlgebraicBind::eval_if_possible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9eb870d69789d8b34159766ca00a7e07" name="a9eb870d69789d8b34159766ca00a7e07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eb870d69789d8b34159766ca00a7e07">&#9670;&#160;</a></span>fillDict()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,9 +438,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">static</a> <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp; truth::AlgebraicBind::fillDict </td>
+          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">BoolDict</a>&lt; <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &gt; &amp; truth::AlgebraicBind::fillDict </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a>&#160;</td>
           <td class="paramname"><em>expr</em>, </td>
         </tr>
         <tr>
@@ -234,20 +461,207 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Fill the dict <code>bd</code> with all variables of expr. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expr</td><td></td></tr>
-    <tr><td class="paramname">bd</td><td></td></tr>
+    <tr><td class="paramname">expr</td><td>The expression to search contained variables of </td></tr>
+    <tr><td class="paramname">bd</td><td>The dict to fill with the new variables </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><br  />
- </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the bool dict <code>bd</code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="abf2c7ef87ae38da2fc06a77dd473e911" name="abf2c7ef87ae38da2fc06a77dd473e911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2c7ef87ae38da2fc06a77dd473e911">&#9670;&#160;</a></span>push_evaluated_small_term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void truth::AlgebraicBind::push_evaluated_small_term </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> *&#160;</td>
+          <td class="paramname"><em>ast</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00076">76</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aea53f97c6ac82f8cd75240caa1909acc" name="aea53f97c6ac82f8cd75240caa1909acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea53f97c6ac82f8cd75240caa1909acc">&#9670;&#160;</a></span>small_terms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::vector&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> * &gt; &amp; truth::AlgebraicBind::small_terms </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all small terms of found in <code>expr</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expr</td><td>The algebraic expression to search for smaller operands with their logic bind-operator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>All pointers to <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> found for value.first, at least one of them is a valid assertion. </dd></dl>
+
+</div>
+</div>
+<a id="a169ccccd1bb6d7900d5a393a144c3506" name="a169ccccd1bb6d7900d5a393a144c3506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169ccccd1bb6d7900d5a393a144c3506">&#9670;&#160;</a></span>small_terms_left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> * &gt; &amp; truth::AlgebraicBind::small_terms_left </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all small terms of found in <code>value.first</code> </p>
+<dl class="section return"><dt>Returns</dt><dd>All pointers to <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> found for value.first, at least one of them is a valid assertion. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The algebraic expression is searched for smaller operands with their logic bind-operator. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae06a8087f819e73f5389452f93defeb2" name="ae06a8087f819e73f5389452f93defeb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06a8087f819e73f5389452f93defeb2">&#9670;&#160;</a></span>small_terms_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> * &gt; &amp; truth::AlgebraicBind::small_terms_right </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all small terms of found in <code>value.first</code> </p>
+<dl class="section return"><dt>Returns</dt><dd>All pointers to <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> found for value.first, at least one of them is a valid assertion. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The algebraic expression is searched for smaller operands with their logic bind-operator. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad53fa6e5f7aa96d54f4fe16fea58672a" name="ad53fa6e5f7aa96d54f4fe16fea58672a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53fa6e5f7aa96d54f4fe16fea58672a">&#9670;&#160;</a></span>string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp; truth::AlgebraicBind::string </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the expression of this algebraic bind. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a450bbe66fa9c43ae450fdae885b864f8" name="a450bbe66fa9c43ae450fdae885b864f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450bbe66fa9c43ae450fdae885b864f8">&#9670;&#160;</a></span>evaluated_terms</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">oneptr::queue&lt; <a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a> &gt; truth::AlgebraicBind::evaluated_terms</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2eca3014ec577524c28aabc452acb81b" name="a2eca3014ec577524c28aabc452acb81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eca3014ec577524c28aabc452acb81b">&#9670;&#160;</a></span>truth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">truth_t</a> truth::AlgebraicBind::truth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The over-all truth value of the expressions, without evaluating them each. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aef11d8fc6feb20b05cc188ec60adce43" name="aef11d8fc6feb20b05cc188ec60adce43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef11d8fc6feb20b05cc188ec60adce43">&#9670;&#160;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a8cb5acbc949f3e5894f89d96e5d814ea">bindval_t</a>&amp; truth::AlgebraicBind::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The left and right expression of an operator, thus the operands. May be simple expressions or greater ones. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/e/repos/concepts/extern/libtruth/truth/<a class="el" href="../../dc/df2/bool__algebraic__bind_8hpp_source.html">bool_algebraic_bind.hpp</a></li>
+<li>/mnt/e/repos/concepts/extern/libtruth/truth/<a class="el" href="../../d7/dab/bool__algebraic__bind_8cpp_source.html">bool_algebraic_bind.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,9 +7,12 @@ var annotated_dup =
       [ "BoolDict", "d6/dcd/classtruth_1_1BoolDict.html", "d6/dcd/classtruth_1_1BoolDict" ],
       [ "BoolExpr", "d9/dd3/classtruth_1_1BoolExpr.html", "d9/dd3/classtruth_1_1BoolExpr" ],
       [ "BoolOperator", "d8/dc0/classtruth_1_1BoolOperator.html", "d8/dc0/classtruth_1_1BoolOperator" ],
-      [ "BoolTree", "da/d32/classtruth_1_1BoolTree.html", "da/d32/classtruth_1_1BoolTree" ],
       [ "BoolType", "d6/d97/classtruth_1_1BoolType.html", "d6/d97/classtruth_1_1BoolType" ],
       [ "BoolValue", "d6/de8/classtruth_1_1BoolValue.html", "d6/de8/classtruth_1_1BoolValue" ],
+      [ "EvaluationExam", "d5/deb/classtruth_1_1EvaluationExam.html", "d5/deb/classtruth_1_1EvaluationExam" ],
+      [ "EvaluationGroup", "d7/d94/classtruth_1_1EvaluationGroup.html", "d7/d94/classtruth_1_1EvaluationGroup" ],
+      [ "Evaluator", "df/d9b/classtruth_1_1Evaluator.html", "df/d9b/classtruth_1_1Evaluator" ],
+      [ "Tree", "d8/d7e/classtruth_1_1Tree.html", "d8/d7e/classtruth_1_1Tree" ],
       [ "TreeLeaf", "d1/d1b/classtruth_1_1TreeLeaf.html", "d1/d1b/classtruth_1_1TreeLeaf" ],
       [ "TreeNode", "da/d4e/classtruth_1_1TreeNode.html", "da/d4e/classtruth_1_1TreeNode" ]
     ] ]

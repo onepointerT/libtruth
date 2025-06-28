@@ -1,9 +1,19 @@
 <map id="truth::TreeNode" name="truth::TreeNode">
-<area shape="rect" id="Node000001" title=" " alt="" coords="43,183,165,208"/>
-<area shape="rect" id="Node000002" href="$d8/dc0/classtruth_1_1BoolOperator.html" title="The basic functionality class that can handle all supported operators, when they have one or two oper..." alt="" coords="5,80,152,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,118,104,182,99,183,82,119"/>
-<area shape="rect" id="Node000003" href="$d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics." alt="" coords="177,80,295,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,116,121,185,117,181,209,111"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="193,5,279,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,45,239,80,233,80,233,45"/>
+<area shape="rect" id="Node000001" title="The content of a Tree::node_t tree node. Holds everything for investigating on evaluation results of ..." alt="" coords="247,359,370,385"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="385,363,397,372,388,380,370,383,370,378,386,375,391,372,382,368"/>
+<area shape="rect" id="Node000002" href="$d1/d1b/classtruth_1_1TreeLeaf.html" title="The content of the last and latestly smallest nodes of a tree path, so called TreeLeaf." alt="" coords="251,269,367,295"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="311,308,311,359,306,359,306,308"/>
+<area shape="rect" id="Node000003" href="$d9/d46/classtruth_1_1AlgebraicSmallTerm.html" title=" " alt="" coords="137,181,328,207"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="254,215,300,267,296,271,250,219"/>
+<area shape="rect" id="Node000004" href="$d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics." alt="" coords="5,93,124,119"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="101,123,211,179,209,183,98,127"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="21,5,108,31"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="67,45,67,93,62,93,62,45"/>
+<area shape="rect" id="Node000006" href="$d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig..." alt="" coords="323,93,449,119"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="378,132,316,270,311,268,373,130"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="354,127,322,145,254,184,251,179,319,140,352,123"/>
+<area shape="rect" id="Node000007" href="$db/d98/uniontruth_1_1BoolValue_1_1Value.html" title="The conversion between the libtruth library and the general C++ bool functionality." alt="" coords="301,5,471,31"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="389,45,389,93,383,93,383,45"/>
+<area shape="rect" id="Node000008" href="$dd/d55/classtruth_1_1AlgebraicBind.html" title=" " alt="" coords="148,93,299,119"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="229,132,234,181,229,181,223,133"/>
 </map>

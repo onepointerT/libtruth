@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['op_0',['op',['../da/d4e/classtruth_1_1TreeNode.html#ab113068e2e67a3cdc32393f089bfd27f',1,'truth::TreeNode']]]
+  ['groups_0',['groups',['../df/d9b/classtruth_1_1Evaluator.html#a1bd8197e0aed51c7c05ac9cef2fb8b0d',1,'truth::Evaluator']]]
 ];

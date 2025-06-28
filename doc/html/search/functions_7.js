@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['set_0',['set',['../d6/dcd/classtruth_1_1BoolDict.html#a6162a00d78d06a8be297e6ee1e789285',1,'truth::BoolDict::set(const char *key, bool &amp;value)'],['../d6/dcd/classtruth_1_1BoolDict.html#ab52580c340c91d78bc8480a0defaa602',1,'truth::BoolDict::set(const char *key, BoolValue &amp;value)'],['../d6/dcd/classtruth_1_1BoolDict.html#a3c3d5f518d0df262c55ef0c100dd69d6',1,'truth::BoolDict::set(const char *key, bool(*value_func)())'],['../d6/dcd/classtruth_1_1BoolDict.html#acc496a7fef38c7399fd45c3c2895f74f',1,'truth::BoolDict::set(const char *key, bool(*value_func)(BoolDict bd))'],['../d6/dcd/classtruth_1_1BoolDict.html#a7a11ce8b7536b11f7f256d91fcff1439',1,'truth::BoolDict::set(const char *key, bool(*value_func)(BoolDict bdf), const BoolDict *bd)'],['../d6/dcd/classtruth_1_1BoolDict.html#aa63ab83b20138d4beb4c97e712b33b6c',1,'truth::BoolDict::set(const char *key, B &amp;value)']]]
+  ['new_5fleaf_0',['new_leaf',['../da/d4e/classtruth_1_1TreeNode.html#ab3028b6f85e048d1079207f65d7017cd',1,'truth::TreeNode']]],
+  ['new_5fsmall_5fterm_1',['new_small_term',['../d9/d46/classtruth_1_1AlgebraicSmallTerm.html#aaad43ba992f67530dec01c788c4c8e77',1,'truth::AlgebraicSmallTerm']]]
 ];

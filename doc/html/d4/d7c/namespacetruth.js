@@ -6,9 +6,12 @@ var namespacetruth =
     [ "BoolDict", "d6/dcd/classtruth_1_1BoolDict.html", "d6/dcd/classtruth_1_1BoolDict" ],
     [ "BoolExpr", "d9/dd3/classtruth_1_1BoolExpr.html", "d9/dd3/classtruth_1_1BoolExpr" ],
     [ "BoolOperator", "d8/dc0/classtruth_1_1BoolOperator.html", "d8/dc0/classtruth_1_1BoolOperator" ],
-    [ "BoolTree", "da/d32/classtruth_1_1BoolTree.html", "da/d32/classtruth_1_1BoolTree" ],
     [ "BoolType", "d6/d97/classtruth_1_1BoolType.html", "d6/d97/classtruth_1_1BoolType" ],
     [ "BoolValue", "d6/de8/classtruth_1_1BoolValue.html", "d6/de8/classtruth_1_1BoolValue" ],
+    [ "EvaluationExam", "d5/deb/classtruth_1_1EvaluationExam.html", "d5/deb/classtruth_1_1EvaluationExam" ],
+    [ "EvaluationGroup", "d7/d94/classtruth_1_1EvaluationGroup.html", "d7/d94/classtruth_1_1EvaluationGroup" ],
+    [ "Evaluator", "df/d9b/classtruth_1_1Evaluator.html", "df/d9b/classtruth_1_1Evaluator" ],
+    [ "Tree", "d8/d7e/classtruth_1_1Tree.html", "d8/d7e/classtruth_1_1Tree" ],
     [ "TreeLeaf", "d1/d1b/classtruth_1_1TreeLeaf.html", "d1/d1b/classtruth_1_1TreeLeaf" ],
     [ "TreeNode", "da/d4e/classtruth_1_1TreeNode.html", "da/d4e/classtruth_1_1TreeNode" ],
     [ "is_convertible", "d1/db9/concepttruth_1_1is__convertible.html", null ],
@@ -19,6 +22,7 @@ var namespacetruth =
     [ "atomic_term_t", "d4/d7c/namespacetruth.html#a24c8c34ccad21d05ba3078436d704698", null ],
     [ "atomic_terms_t", "d4/d7c/namespacetruth.html#a6bd0527c679df9851e39b1ed23db3614", null ],
     [ "bool_dict_ptr", "d4/d7c/namespacetruth.html#a6fba24151f641c95e5fce09a18af9430", null ],
+    [ "evaluated_truth_t", "d4/d7c/namespacetruth.html#ac18ee9ef10e1216eea7c101eb5ba1531", null ],
     [ "expr_t", "d4/d7c/namespacetruth.html#a740e53e4656a06372142617000911937", null ],
     [ "truth_pair_t", "d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa", null ],
     [ "BoolState", "d4/d7c/namespacetruth.html#a5968ff376aae6be3b51c4d8b2b5e033f", [
@@ -39,6 +43,9 @@ var namespacetruth =
       [ "OPERATOR", "d4/d7c/namespacetruth.html#a66b0663e1c1bf4a71c46a56868411c4fa55db182a9f638ea02eb93c716945705f", null ],
       [ "BRACKETTERM", "d4/d7c/namespacetruth.html#a66b0663e1c1bf4a71c46a56868411c4fa4cb4deeefc5015c8f98eec1e4d209750", null ]
     ] ],
+    [ "eval", "d4/d7c/namespacetruth.html#af830ff4973dba9f9b781cd14657480c5", null ],
     [ "eval", "d4/d7c/namespacetruth.html#aa9a2a9bf02a4eb93dbbf65780e07eecc", null ],
-    [ "get_new", "d4/d7c/namespacetruth.html#ad53879f4da1e0ca5edbe03ff8af4316c", null ]
+    [ "eval_expression_if_possible", "d4/d7c/namespacetruth.html#a8d18992243b77db95c02a39bdc612708", null ],
+    [ "get_new", "d4/d7c/namespacetruth.html#ad53879f4da1e0ca5edbe03ff8af4316c", null ],
+    [ "small_terms", "d4/d7c/namespacetruth.html#ae59b36b617759dfbdc4b3aef8598e497", null ]
 ];

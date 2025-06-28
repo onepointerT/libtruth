@@ -91,11 +91,16 @@ $(document).ready(function(){initNavTree('da/d4e/classtruth_1_1TreeNode.html','.
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../da/da9/classtruth_1_1TreeNode-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">truth::TreeNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The content of a <code>Tree::node_t</code> tree node. Holds everything for investigating on evaluation results of a <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code>, that is to be splitted into at least two operand parts per node and can be evaluated as <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> per <code><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html" title="The content of the last and latestly smallest nodes of a tree path, so called TreeLeaf.">TreeLeaf</a></code>.  
+ <a href="../../da/d4e/classtruth_1_1TreeNode.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -103,79 +108,479 @@ Collaboration diagram for truth::TreeNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/d84/classtruth_1_1TreeNode__coll__graph.png" border="0" usemap="#atruth_1_1TreeNode_coll__map" alt="Collaboration graph"/></div>
 <map name="atruth_1_1TreeNode_coll__map" id="atruth_1_1TreeNode_coll__map">
-<area shape="rect" title=" " alt="" coords="43,183,165,208"/>
-<area shape="rect" href="../../d8/dc0/classtruth_1_1BoolOperator.html" title="The basic functionality class that can handle all supported operators, when they have one or two oper..." alt="" coords="5,80,152,105"/>
-<area shape="poly" title=" " alt="" coords="88,118,104,182,99,183,82,119"/>
-<area shape="rect" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics." alt="" coords="177,80,295,105"/>
-<area shape="poly" title=" " alt="" coords="212,116,121,185,117,181,209,111"/>
-<area shape="rect" title=" " alt="" coords="193,5,279,31"/>
-<area shape="poly" title=" " alt="" coords="239,45,239,80,233,80,233,45"/>
+<area shape="rect" title="The content of a Tree::node_t tree node. Holds everything for investigating on evaluation results of ..." alt="" coords="247,359,370,385"/>
+<area shape="poly" title=" " alt="" coords="385,363,397,372,388,380,370,383,370,378,386,375,391,372,382,368"/>
+<area shape="rect" href="../../d1/d1b/classtruth_1_1TreeLeaf.html" title="The content of the last and latestly smallest nodes of a tree path, so called TreeLeaf." alt="" coords="251,269,367,295"/>
+<area shape="poly" title=" " alt="" coords="311,308,311,359,306,359,306,308"/>
+<area shape="rect" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html" title=" " alt="" coords="137,181,328,207"/>
+<area shape="poly" title=" " alt="" coords="254,215,300,267,296,271,250,219"/>
+<area shape="rect" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics." alt="" coords="5,93,124,119"/>
+<area shape="poly" title=" " alt="" coords="101,123,211,179,209,183,98,127"/>
+<area shape="rect" title=" " alt="" coords="21,5,108,31"/>
+<area shape="poly" title=" " alt="" coords="67,45,67,93,62,93,62,45"/>
+<area shape="rect" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig..." alt="" coords="323,93,449,119"/>
+<area shape="poly" title=" " alt="" coords="378,132,316,270,311,268,373,130"/>
+<area shape="poly" title=" " alt="" coords="354,127,322,145,254,184,251,179,319,140,352,123"/>
+<area shape="rect" href="../../db/d98/uniontruth_1_1BoolValue_1_1Value.html" title="The conversion between the libtruth library and the general C++ bool functionality." alt="" coords="301,5,471,31"/>
+<area shape="poly" title=" " alt="" coords="389,45,389,93,383,93,383,45"/>
+<area shape="rect" href="../../dd/d55/classtruth_1_1AlgebraicBind.html" title=" " alt="" coords="148,93,299,119"/>
+<area shape="poly" title=" " alt="" coords="229,132,234,181,229,181,223,133"/>
 </map>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2ad0aef5f102b0055249fac3f44dfe6e" id="r_a2ad0aef5f102b0055249fac3f44dfe6e"><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *, <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a2ad0aef5f102b0055249fac3f44dfe6e">node_children_pair_t</a></td></tr>
+<tr class="memdesc:a2ad0aef5f102b0055249fac3f44dfe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pair of node-content <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html" title="The content of a Tree::node_t tree node. Holds everything for investigating on evaluation results of ...">TreeNode</a></code> pointers.  <br /></td></tr>
+<tr class="separator:a2ad0aef5f102b0055249fac3f44dfe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1a2a1d85acf023579f964acf796ec97f" id="r_a1a2a1d85acf023579f964acf796ec97f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a1a2a1d85acf023579f964acf796ec97f">TreeNode</a> (<a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a> &amp;algebraic_term, <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *lneightbour=nullptr, <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *rneightbour=nullptr)</td></tr>
+<tr class="memdesc:a1a2a1d85acf023579f964acf796ec97f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a1a2a1d85acf023579f964acf796ec97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bada752e4a051062916768d5047268" id="r_a57bada752e4a051062916768d5047268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a57bada752e4a051062916768d5047268">TreeNode</a> (const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;algebraic_term, <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> logic_operator, bool left_term=false, <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *lneightbour=nullptr, <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *rneightbour=nullptr)</td></tr>
+<tr class="memdesc:a57bada752e4a051062916768d5047268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a57bada752e4a051062916768d5047268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1de782a5b2960bdf021bd816e9caa1" id="r_a2e1de782a5b2960bdf021bd816e9caa1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a2e1de782a5b2960bdf021bd816e9caa1">value</a> () const</td></tr>
+<tr class="memdesc:a2e1de782a5b2960bdf021bd816e9caa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the result value of the over-all investigation/evaluation of this node's attributes.  <br /></td></tr>
+<tr class="separator:a2e1de782a5b2960bdf021bd816e9caa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3b32f3cd1ad7fa4b03ad15f60b6076" id="r_a4d3b32f3cd1ad7fa4b03ad15f60b6076"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076">expr</a> () const</td></tr>
+<tr class="memdesc:a4d3b32f3cd1ad7fa4b03ad15f60b6076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code> of this node in completness.  <br /></td></tr>
+<tr class="separator:a4d3b32f3cd1ad7fa4b03ad15f60b6076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae409f8ec42c0e1b98f28fed77d123602" id="r_ae409f8ec42c0e1b98f28fed77d123602"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ae409f8ec42c0e1b98f28fed77d123602">term</a> () const</td></tr>
+<tr class="memdesc:ae409f8ec42c0e1b98f28fed77d123602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the used <code><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a></code> term with all parts of the term of <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">expr()</a></code> and a further insight of its operand parts.  <br /></td></tr>
+<tr class="separator:ae409f8ec42c0e1b98f28fed77d123602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e463ddffc8f3c4590679ab4ea5c750a" id="r_a4e463ddffc8f3c4590679ab4ea5c750a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">AlgebraicBind::truth_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4e463ddffc8f3c4590679ab4ea5c750a">terms_truth</a> ()</td></tr>
+<tr class="memdesc:a4e463ddffc8f3c4590679ab4ea5c750a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to a pair of <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a></code>, that is thus the result of the left and the right sub-node.  <br /></td></tr>
+<tr class="separator:a4e463ddffc8f3c4590679ab4ea5c750a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66121ef16f22c08c01d89cf834566c54" id="r_a66121ef16f22c08c01d89cf834566c54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a66121ef16f22c08c01d89cf834566c54">operator bool</a> () const</td></tr>
+<tr class="separator:a66121ef16f22c08c01d89cf834566c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b30894ca273244075d5b71cca3e6a8" id="r_ac0b30894ca273244075d5b71cca3e6a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ac0b30894ca273244075d5b71cca3e6a8">operator BoolValue</a> () const</td></tr>
+<tr class="separator:ac0b30894ca273244075d5b71cca3e6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae900a6dbcd9fc129ae521fc15c20a2b1" id="r_ae900a6dbcd9fc129ae521fc15c20a2b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a2ad0aef5f102b0055249fac3f44dfe6e">node_children_pair_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ae900a6dbcd9fc129ae521fc15c20a2b1">split</a> () const</td></tr>
+<tr class="memdesc:ae900a6dbcd9fc129ae521fc15c20a2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split <code>this-&gt;<a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">expr()</a></code> at last operator or before the last most-upper backet into two sub-node content-objects.  <br /></td></tr>
+<tr class="separator:ae900a6dbcd9fc129ae521fc15c20a2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3028b6f85e048d1079207f65d7017cd" id="r_ab3028b6f85e048d1079207f65d7017cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html">TreeLeaf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ab3028b6f85e048d1079207f65d7017cd">new_leaf</a> () const</td></tr>
+<tr class="memdesc:ab3028b6f85e048d1079207f65d7017cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <code>leaf_t::content</code> for the complete <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">TreeNode::expr</a></code>. This can be senseful, if <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ae900a6dbcd9fc129ae521fc15c20a2b1" title="Split this-&gt;expr() at last operator or before the last most-upper backet into two sub-node content-ob...">TreeNode::split()</a> == {nullptr, nullptr}</code>.  <br /></td></tr>
+<tr class="separator:ab3028b6f85e048d1079207f65d7017cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab113068e2e67a3cdc32393f089bfd27f" id="r_ab113068e2e67a3cdc32393f089bfd27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html">BoolOperator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ab113068e2e67a3cdc32393f089bfd27f">op</a></td></tr>
-<tr class="separator:ab113068e2e67a3cdc32393f089bfd27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f0f3c7d1ff6c40cd4c730c631489ae7" id="r_a2f0f3c7d1ff6c40cd4c730c631489ae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a2f0f3c7d1ff6c40cd4c730c631489ae7">expr_left</a></td></tr>
-<tr class="separator:a2f0f3c7d1ff6c40cd4c730c631489ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a878e04f05d72e5a785f5c2474531e219" id="r_a878e04f05d72e5a785f5c2474531e219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a878e04f05d72e5a785f5c2474531e219">expr_right</a></td></tr>
-<tr class="separator:a878e04f05d72e5a785f5c2474531e219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a1fc761209283012a5ce774a866ad4" id="r_a89a1fc761209283012a5ce774a866ad4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a89a1fc761209283012a5ce774a866ad4">op</a></td></tr>
+<tr class="memdesc:a89a1fc761209283012a5ce774a866ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operator that the factorizatored operand sub-nodes have in common.  <br /></td></tr>
+<tr class="separator:a89a1fc761209283012a5ce774a866ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92621d90230ee670e462edb215fed70e" id="r_a92621d90230ee670e462edb215fed70e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a92621d90230ee670e462edb215fed70e">deepness</a></td></tr>
+<tr class="memdesc:a92621d90230ee670e462edb215fed70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The deepness of this node since <code>Tree::root</code>  <br /></td></tr>
+<tr class="separator:a92621d90230ee670e462edb215fed70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e4bf36e2916f0a1f8fa515d5ffbe9b" id="r_aa9e4bf36e2916f0a1f8fa515d5ffbe9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#aa9e4bf36e2916f0a1f8fa515d5ffbe9b">neighbour_left</a></td></tr>
+<tr class="memdesc:aa9e4bf36e2916f0a1f8fa515d5ffbe9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For evaluation concerns and better handability, the left neightbour, if any, of a term with a right operand.  <br /></td></tr>
+<tr class="separator:aa9e4bf36e2916f0a1f8fa515d5ffbe9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cad41bcc694c2fca774c3205195593" id="r_a89cad41bcc694c2fca774c3205195593"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a89cad41bcc694c2fca774c3205195593">neighbour_right</a></td></tr>
+<tr class="memdesc:a89cad41bcc694c2fca774c3205195593"><td class="mdescLeft">&#160;</td><td class="mdescRight">For evaluation concerns and better handability, the left neightbour, if any, of a term with a right operand.  <br /></td></tr>
+<tr class="separator:a89cad41bcc694c2fca774c3205195593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37dc9587de91b193272f04e879b3ee9a" id="r_a37dc9587de91b193272f04e879b3ee9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html">TreeLeaf</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a37dc9587de91b193272f04e879b3ee9a">leaf</a></td></tr>
+<tr class="memdesc:a37dc9587de91b193272f04e879b3ee9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The leaf, if any, with the <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> of exactly this node's <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> m_expr</code>.  <br /></td></tr>
+<tr class="separator:a37dc9587de91b193272f04e879b3ee9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00014">14</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2f0f3c7d1ff6c40cd4c730c631489ae7" name="a2f0f3c7d1ff6c40cd4c730c631489ae7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f0f3c7d1ff6c40cd4c730c631489ae7">&#9670;&#160;</a></span>expr_left</h2>
+<div class="textblock"><p>The content of a <code>Tree::node_t</code> tree node. Holds everything for investigating on evaluation results of a <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code>, that is to be splitted into at least two operand parts per node and can be evaluated as <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> per <code><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html" title="The content of the last and latestly smallest nodes of a tree path, so called TreeLeaf.">TreeLeaf</a></code>. </p>
+<dl class="section note"><dt>Note</dt><dd>Can also be build with factorizational splitting for all same-level operands with the same operator, in thus case, the alghorithm is a little bit other than the default and needs to be implemented by the user. The default alghorithm will create two sub-nodes per (TODO: not-yet <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code>) <code><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a></code> with two operands and one leaf for each small term's 1-2 operands, when the <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code> of the <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html" title="The content of a Tree::node_t tree node. Holds everything for investigating on evaluation results of ...">TreeNode</a></code> is small enough yet. Does honor brackets on investigating on the operands. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a2ad0aef5f102b0055249fac3f44dfe6e" name="a2ad0aef5f102b0055249fac3f44dfe6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad0aef5f102b0055249fac3f44dfe6e">&#9670;&#160;</a></span>node_children_pair_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>* truth::TreeNode::expr_left</td>
+          <td class="memname">typedef std::pair&lt; <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a>*, <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a>* &gt; <a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a2ad0aef5f102b0055249fac3f44dfe6e">truth::TreeNode::node_children_pair_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00017">17</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+<p>A pair of node-content <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html" title="The content of a Tree::node_t tree node. Holds everything for investigating on evaluation results of ...">TreeNode</a></code> pointers. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00081">81</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
 
 </div>
 </div>
-<a id="a878e04f05d72e5a785f5c2474531e219" name="a878e04f05d72e5a785f5c2474531e219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a878e04f05d72e5a785f5c2474531e219">&#9670;&#160;</a></span>expr_right</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1a2a1d85acf023579f964acf796ec97f" name="a1a2a1d85acf023579f964acf796ec97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2a1d85acf023579f964acf796ec97f">&#9670;&#160;</a></span>TreeNode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a>* truth::TreeNode::expr_right</td>
+          <td class="memname">truth::TreeNode::TreeNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a> &amp;&#160;</td>
+          <td class="paramname"><em>algebraic_term</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>lneightbour</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>rneightbour</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00018">18</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">algebraic_term</td><td><code><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a></code> to evaluate and save for further investigation with this node. </td></tr>
+    <tr><td class="paramname">lneightbour</td><td>The left neighbour's node-content, if any. </td></tr>
+    <tr><td class="paramname">rneightbour</td><td>The right neighbour's node-content, if any. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab113068e2e67a3cdc32393f089bfd27f" name="ab113068e2e67a3cdc32393f089bfd27f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab113068e2e67a3cdc32393f089bfd27f">&#9670;&#160;</a></span>op</h2>
+<a id="a57bada752e4a051062916768d5047268" name="a57bada752e4a051062916768d5047268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bada752e4a051062916768d5047268">&#9670;&#160;</a></span>TreeNode() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html">BoolOperator</a> truth::TreeNode::op</td>
+          <td class="memname">truth::TreeNode::TreeNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp;&#160;</td>
+          <td class="paramname"><em>algebraic_term</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a>&#160;</td>
+          <td class="paramname"><em>logic_operator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>left_term</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>lneightbour</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a> *&#160;</td>
+          <td class="paramname"><em>rneightbour</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00016">16</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">algebraic_term</td><td>The <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code> to evaluate and save for further investigation with this node. </td></tr>
+    <tr><td class="paramname">logic_operator</td><td>The logical-arithmetic operator, that thus this node has, concatenating its neighbour to the term of <code>this-&gt;parent-&gt;content-&gt;<a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">expr()</a></code>. </td></tr>
+    <tr><td class="paramname">left_term</td><td>If <code>algebraic_term</code> is the left logical-arithmetic operand. </td></tr>
+    <tr><td class="paramname">lneightbour</td><td>The left neighbour's node-content, if any. </td></tr>
+    <tr><td class="paramname">rneightbour</td><td>The right neighbour's node-content, if any. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d3b32f3cd1ad7fa4b03ad15f60b6076" name="a4d3b32f3cd1ad7fa4b03ad15f60b6076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3b32f3cd1ad7fa4b03ad15f60b6076">&#9670;&#160;</a></span>expr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html">BoolExpr</a> &amp; truth::TreeNode::expr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the underlying <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a></code> of this node in completness. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the logic-algebraic bool expression of this node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab3028b6f85e048d1079207f65d7017cd" name="ab3028b6f85e048d1079207f65d7017cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3028b6f85e048d1079207f65d7017cd">&#9670;&#160;</a></span>new_leaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html">TreeLeaf</a> * truth::TreeNode::new_leaf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new <code>leaf_t::content</code> for the complete <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">TreeNode::expr</a></code>. This can be senseful, if <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#ae900a6dbcd9fc129ae521fc15c20a2b1" title="Split this-&gt;expr() at last operator or before the last most-upper backet into two sub-node content-ob...">TreeNode::split()</a> == {nullptr, nullptr}</code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a <code><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html" title="The content of the last and latestly smallest nodes of a tree path, so called TreeLeaf.">TreeLeaf</a></code> created from the complete <code>this-&gt;m_expr</code>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a66121ef16f22c08c01d89cf834566c54" name="a66121ef16f22c08c01d89cf834566c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66121ef16f22c08c01d89cf834566c54">&#9670;&#160;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">truth::TreeNode::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac0b30894ca273244075d5b71cca3e6a8" name="ac0b30894ca273244075d5b71cca3e6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b30894ca273244075d5b71cca3e6a8">&#9670;&#160;</a></span>operator BoolValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">truth::TreeNode::operator <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae900a6dbcd9fc129ae521fc15c20a2b1" name="ae900a6dbcd9fc129ae521fc15c20a2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae900a6dbcd9fc129ae521fc15c20a2b1">&#9670;&#160;</a></span>split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a2ad0aef5f102b0055249fac3f44dfe6e">TreeNode::node_children_pair_t</a> * truth::TreeNode::split </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split <code>this-&gt;<a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">expr()</a></code> at last operator or before the last most-upper backet into two sub-node content-objects. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pair with two <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html" title="The content of a Tree::node_t tree node. Holds everything for investigating on evaluation results of ...">TreeNode</a></code> pointers. If one of them is a <code>nullptr</code>, the term of this side of the operator is elementaristic enought to create a <code>Tree::leaf_t</code>/<code><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html" title="The content of the last and latestly smallest nodes of a tree path, so called TreeLeaf.">TreeLeaf</a></code> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae409f8ec42c0e1b98f28fed77d123602" name="ae409f8ec42c0e1b98f28fed77d123602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae409f8ec42c0e1b98f28fed77d123602">&#9670;&#160;</a></span>term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a> &amp; truth::TreeNode::term </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the used <code><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a></code> term with all parts of the term of <code><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html#a4d3b32f3cd1ad7fa4b03ad15f60b6076" title="Get the underlying BoolExpr of this node in completness.">expr()</a></code> and a further insight of its operand parts. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the logic-algebraic <code><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html">AlgebraicBind</a></code> object of this node </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00048">48</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4e463ddffc8f3c4590679ab4ea5c750a" name="a4e463ddffc8f3c4590679ab4ea5c750a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e463ddffc8f3c4590679ab4ea5c750a">&#9670;&#160;</a></span>terms_truth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">AlgebraicBind::truth_t</a> &amp; truth::TreeNode::terms_truth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a reference to a pair of <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html" title="The functionality a bool value of this library has, a simple enum class with transformation and assig...">BoolValue</a></code>, that is thus the result of the left and the right sub-node. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to an <code><a class="el" href="../../dd/d55/classtruth_1_1AlgebraicBind.html#a2378a7e04ebb854a9cec5b555591f6ad">AlgebraicBind::truth_t</a></code>, that defaults to <code><a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54ca407ffe45b1c704dda8c069a252a8ae90">BoolValue::Unknown</a></code> until evaluated. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2e1de782a5b2960bdf021bd816e9caa1" name="a2e1de782a5b2960bdf021bd816e9caa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1de782a5b2960bdf021bd816e9caa1">&#9670;&#160;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d6/de8/classtruth_1_1BoolValue.html">BoolValue</a> &amp; truth::TreeNode::value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the result value of the over-all investigation/evaluation of this node's attributes. </p>
+<dl class="section return"><dt>Returns</dt><dd>The result value of <code>this-&gt;leaf</code> or, concatenated with <code>this-&gt;op</code> and <code><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#a6f25f13ac4bdfaf13ed037fcbd967cb5">BoolOperator::eval()</a></code>, the result of at least both sub-nodes and their recursive result onto until the leafs. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d02/booltree_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a92621d90230ee670e462edb215fed70e" name="a92621d90230ee670e462edb215fed70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92621d90230ee670e462edb215fed70e">&#9670;&#160;</a></span>deepness</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t truth::TreeNode::deepness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The deepness of this node since <code>Tree::root</code> </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a37dc9587de91b193272f04e879b3ee9a" name="a37dc9587de91b193272f04e879b3ee9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37dc9587de91b193272f04e879b3ee9a">&#9670;&#160;</a></span>leaf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d1b/classtruth_1_1TreeLeaf.html">TreeLeaf</a>* truth::TreeNode::leaf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The leaf, if any, with the <code><a class="el" href="../../d9/d46/classtruth_1_1AlgebraicSmallTerm.html">AlgebraicSmallTerm</a></code> of exactly this node's <code><a class="el" href="../../d9/dd3/classtruth_1_1BoolExpr.html" title="A basic bool expression like it can be found in truth algebra and logics.">BoolExpr</a> m_expr</code>. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa9e4bf36e2916f0a1f8fa515d5ffbe9b" name="aa9e4bf36e2916f0a1f8fa515d5ffbe9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e4bf36e2916f0a1f8fa515d5ffbe9b">&#9670;&#160;</a></span>neighbour_left</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a>* truth::TreeNode::neighbour_left</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For evaluation concerns and better handability, the left neightbour, if any, of a term with a right operand. </p>
+<dl class="section note"><dt>Note</dt><dd>On default, the 1st sub-node is the left term, the left operand of the operator </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a89cad41bcc694c2fca774c3205195593" name="a89cad41bcc694c2fca774c3205195593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cad41bcc694c2fca774c3205195593">&#9670;&#160;</a></span>neighbour_right</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4e/classtruth_1_1TreeNode.html">TreeNode</a>* truth::TreeNode::neighbour_right</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For evaluation concerns and better handability, the left neightbour, if any, of a term with a right operand. </p>
+<dl class="section note"><dt>Note</dt><dd>On default, the 2nd sub-node is the right term, the right operand of both </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00046">46</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a89a1fc761209283012a5ce774a866ad4" name="a89a1fc761209283012a5ce774a866ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a1fc761209283012a5ce774a866ad4">&#9670;&#160;</a></span>op</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> truth::TreeNode::op</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The operator that the factorizatored operand sub-nodes have in common. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d44/booltree_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/mnt/e/repos/concepts/extern/libtruth/truth/<a class="el" href="../../d8/d44/booltree_8hpp_source.html">booltree.hpp</a></li>
+<li>/mnt/e/repos/concepts/extern/libtruth/truth/<a class="el" href="../../dc/d02/booltree_8cpp_source.html">booltree.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

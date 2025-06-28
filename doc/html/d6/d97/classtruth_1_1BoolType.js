@@ -18,6 +18,6 @@ var classtruth_1_1BoolType =
     [ "BoolType", "d6/d97/classtruth_1_1BoolType.html#ae0fd8ee2bf113183c970e10499fffdf4", null ],
     [ "BoolType", "d6/d97/classtruth_1_1BoolType.html#a7b4e3554cf0e1b48c4830c389a1e25d3", null ],
     [ "BoolType", "d6/d97/classtruth_1_1BoolType.html#ab22c44a6bd1c64e712f8621acd30105a", null ],
-    [ "result_in", "d6/d97/classtruth_1_1BoolType.html#af06397a24fe722d4fc07d3a306bc2e77", null ],
+    [ "results", "d6/d97/classtruth_1_1BoolType.html#ab0703570fb92dc69baf1c44e7e916897", null ],
     [ "truth_values", "d6/d97/classtruth_1_1BoolType.html#a26cf33eecbdeeafc997a98f05ce0b360", null ]
 ];

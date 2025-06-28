@@ -112,6 +112,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fea0b3261466fa8779497161c35761510cd">IMPLIES</a> = 3
 , <br />
 &#160;&#160;<a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fea65dea6aadef1ce37a935f994e0d9d1e3">UNKNOWN</a> = 8
+, <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fead0bf823dcb8374a6377a782bb31c3cda">ANY</a> = 7
 <br />
  }</td></tr>
 <tr class="memdesc:acecea103bafc69a90e112b9c23efa7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">All known operators of this library "libtruth".  <a href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">More...</a><br /></td></tr>
@@ -119,8 +120,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9211061f6a97d69c0f7c8785d9b77413" id="r_a9211061f6a97d69c0f7c8785d9b77413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">static</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#a9211061f6a97d69c0f7c8785d9b77413">is</a> (<a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> std::string op)</td></tr>
+<tr class="memitem:a9211061f6a97d69c0f7c8785d9b77413" id="r_a9211061f6a97d69c0f7c8785d9b77413"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#a9211061f6a97d69c0f7c8785d9b77413">is</a> (const std::string op)</td></tr>
 <tr class="separator:a9211061f6a97d69c0f7c8785d9b77413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609d98048d446be3a30002c17a111efe" id="r_a609d98048d446be3a30002c17a111efe"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#a609d98048d446be3a30002c17a111efe">string</a> (const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> op)</td></tr>
+<tr class="separator:a609d98048d446be3a30002c17a111efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f25f13ac4bdfaf13ed037fcbd967cb5" id="r_a6f25f13ac4bdfaf13ed037fcbd967cb5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#a6f25f13ac4bdfaf13ed037fcbd967cb5">eval</a> (const bool lhs, const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a> op, const bool rhs)</td></tr>
+<tr class="separator:a6f25f13ac4bdfaf13ed037fcbd967cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The basic functionality class that can handle all supported operators, when they have one or two operands. </p>
@@ -134,7 +139,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">enum</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">truth::BoolOperator::Type</a> : <a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">uint8_t</a></td>
+          <td class="memname">enum <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">truth::BoolOperator::Type</a> : uint8_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -146,6 +151,7 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="acecea103bafc69a90e112b9c23efa7fea89c5e206589d2049c406b095a56b45ef" name="acecea103bafc69a90e112b9c23efa7fea89c5e206589d2049c406b095a56b45ef"></a>NEGATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="acecea103bafc69a90e112b9c23efa7fea0b3261466fa8779497161c35761510cd" name="acecea103bafc69a90e112b9c23efa7fea0b3261466fa8779497161c35761510cd"></a>IMPLIES&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="acecea103bafc69a90e112b9c23efa7fea65dea6aadef1ce37a935f994e0d9d1e3" name="acecea103bafc69a90e112b9c23efa7fea65dea6aadef1ce37a935f994e0d9d1e3"></a>UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acecea103bafc69a90e112b9c23efa7fead0bf823dcb8374a6377a782bb31c3cda" name="acecea103bafc69a90e112b9c23efa7fead0bf823dcb8374a6377a782bb31c3cda"></a>ANY&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d9e/boolop_8hpp_source.html#l00022">22</a> of file <a class="el" href="../../db/d9e/boolop_8hpp_source.html">boolop.hpp</a>.</p>
@@ -153,6 +159,50 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f25f13ac4bdfaf13ed037fcbd967cb5" name="a6f25f13ac4bdfaf13ed037fcbd967cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f25f13ac4bdfaf13ed037fcbd967cb5">&#9670;&#160;</a></span>eval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool truth::BoolOperator::eval </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a>&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/boolop_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../db/d9e/boolop_8hpp_source.html">boolop.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a9211061f6a97d69c0f7c8785d9b77413" name="a9211061f6a97d69c0f7c8785d9b77413"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9211061f6a97d69c0f7c8785d9b77413">&#9670;&#160;</a></span>is()</h2>
 
@@ -163,9 +213,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">static</a> <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">Type</a> truth::BoolOperator::is </td>
+          <td class="memname">static <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">Type</a> truth::BoolOperator::is </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/dcd/classtruth_1_1BoolDict.html">const</a> std::string&#160;</td>
+          <td class="paramtype">const std::string&#160;</td>
           <td class="paramname"><em>op</em></td><td>)</td>
           <td></td>
         </tr>
@@ -177,7 +227,35 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d9e/boolop_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../db/d9e/boolop_8hpp_source.html">boolop.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/boolop_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../db/d9e/boolop_8hpp_source.html">boolop.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a609d98048d446be3a30002c17a111efe" name="a609d98048d446be3a30002c17a111efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609d98048d446be3a30002c17a111efe">&#9670;&#160;</a></span>string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const std::string truth::BoolOperator::string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe">BoolOperator::Type</a>&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d9e/boolop_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../db/d9e/boolop_8hpp_source.html">boolop.hpp</a>.</p>
 
 </div>
 </div>

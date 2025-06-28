@@ -1,22 +1,9 @@
 var searchData=
 [
-  ['t_0',['t',['../db/d98/uniontruth_1_1BoolValue_1_1Value.html#ab32059817db7602522ffb0214275ef6e',1,'truth::BoolValue::Value']]],
-  ['term_1',['term',['../d4/d7c/namespacetruth.html#a66b0663e1c1bf4a71c46a56868411c4fab070eea32af4521de3159d909b6845b8',1,'truth::TERM'],['../d9/d46/classtruth_1_1AlgebraicSmallTerm.html#a5cb32d6306ef191047b1ceb8fc33883e',1,'truth::AlgebraicSmallTerm::term']]],
-  ['term_5ft_2',['term_t',['../d6/d97/classtruth_1_1BoolType.html#a6ad93ac451ca27580e910248403fb9f4',1,'truth::BoolType']]],
-  ['treeleaf_3',['TreeLeaf',['../d1/d1b/classtruth_1_1TreeLeaf.html',1,'truth']]],
-  ['treenode_4',['TreeNode',['../da/d4e/classtruth_1_1TreeNode.html',1,'truth']]],
-  ['true_5',['true',['../d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54cadc165852f702944b1a4e6dadd6a0ad0e',1,'truth::BoolValue::True'],['../d7/d13/bool__base_8hpp.html#add3ca9eefe3b5b754426f51d3043e579',1,'True:&#160;bool_base.hpp'],['../db/d98/uniontruth_1_1BoolValue_1_1Value.html#a6afa3e70708b13cdfe1e62a0dfc2f505',1,'truth::BoolValue::Value::True'],['../d6/d97/classtruth_1_1BoolType.html#a92b7ecb75306348709bc447df8391a32',1,'truth::BoolType::TRUE']]],
-  ['truth_6',['truth',['../d4/d7c/namespacetruth.html',1,'']]],
-  ['truth_3a_3ais_5fbool_5fevaluatable_7',['is_bool_evaluatable',['../d9/ddc/concepttruth_1_1is__bool__evaluatable.html',1,'truth']]],
-  ['truth_3a_3ais_5fconvertible_8',['is_convertible',['../d1/db9/concepttruth_1_1is__convertible.html',1,'truth']]],
-  ['truth_5fbool_5ffalse_9',['TRUTH_BOOL_FALSE',['../d4/d60/bool__value__dict_8hpp.html#a0db9f58e846e5be2c3063fc0d0b10215',1,'bool_value_dict.hpp']]],
-  ['truth_5fbool_5fnone_10',['TRUTH_BOOL_NONE',['../d4/d60/bool__value__dict_8hpp.html#a6708bdb4ed3968725801547763e897ca',1,'bool_value_dict.hpp']]],
-  ['truth_5fbool_5ftrue_11',['TRUTH_BOOL_TRUE',['../d4/d60/bool__value__dict_8hpp.html#abaaa4aa1fbe49cfe0e21f3a6c7b302d6',1,'bool_value_dict.hpp']]],
-  ['truth_5ffalse_12',['truth_false',['../d7/d13/bool__base_8hpp.html#aa2043e7809c9426104eaddad170bd012',1,'bool_base.hpp']]],
-  ['truth_5ffalse_5fstr_13',['truth_false_str',['../d7/d13/bool__base_8hpp.html#af9dfa400b6772065e0c3aa6d47c71809',1,'bool_base.hpp']]],
-  ['truth_5fpair_5ft_14',['truth_pair_t',['../d4/d7c/namespacetruth.html#a1de8a8d4bdfe624a7dd90c138ca2d3fa',1,'truth']]],
-  ['truth_5ftrue_15',['truth_true',['../d7/d13/bool__base_8hpp.html#a9fbdbf3c198170da1e4fc22dbb0648cc',1,'bool_base.hpp']]],
-  ['truth_5ftrue_5fstr_16',['truth_true_str',['../d7/d13/bool__base_8hpp.html#a74e9fb781d923ed89e8069e78e70f867',1,'bool_base.hpp']]],
-  ['truth_5fvalues_17',['truth_values',['../d6/d97/classtruth_1_1BoolType.html#a26cf33eecbdeeafc997a98f05ce0b360',1,'truth::BoolType']]],
-  ['type_18',['type',['../d8/dc0/classtruth_1_1BoolOperator.html#acecea103bafc69a90e112b9c23efa7fe',1,'truth::BoolOperator::Type'],['../d6/de8/classtruth_1_1BoolValue.html#a6a6d6987bb49bc887f1527962d60e54c',1,'truth::BoolValue::Type']]]
+  ['rbracket_0',['RBRACKET',['../d4/d7c/namespacetruth.html#a66b0663e1c1bf4a71c46a56868411c4fa9fce2460ce3e07cabde46e64a2db94df',1,'truth']]],
+  ['reset_1',['reset',['../d8/d7e/classtruth_1_1Tree.html#a7746b7068586379b90dc5fd9c89e2a60',1,'truth::Tree::reset(const AtomicBoolTerm *abt)'],['../d8/d7e/classtruth_1_1Tree.html#a718a3d801a04df64b8c5447b5aab86f8',1,'truth::Tree::reset(const AlgebraicBind *ab)']]],
+  ['result_2',['result',['../d7/d94/classtruth_1_1EvaluationGroup.html#ad751d78f67aa6f65bef3fd7697794cc2',1,'truth::EvaluationGroup::result'],['../d1/d1b/classtruth_1_1TreeLeaf.html#af102ffd67c1daab04900d0aa89d6e580',1,'truth::TreeLeaf::result']]],
+  ['results_3',['results',['../d6/d97/classtruth_1_1BoolType.html#ab0703570fb92dc69baf1c44e7e916897',1,'truth::BoolType']]],
+  ['rfind_5ffirst_5fof_5fall_4',['rfind_first_of_all',['../d9/dd3/classtruth_1_1BoolExpr.html#a27ca20e1b863bd30785b9464bfb73b06',1,'truth::BoolExpr']]],
+  ['right_5',['RIGHT',['../d4/d7c/namespacetruth.html#a5968ff376aae6be3b51c4d8b2b5e033fab276ca23d4faccf993c82fe1588b2b51',1,'truth']]]
 ];

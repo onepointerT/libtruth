@@ -7,15 +7,20 @@ var hierarchy =
     [ "truth::BoolValue", "d6/de8/classtruth_1_1BoolValue.html", [
       [ "truth::BoolType", "d6/d97/classtruth_1_1BoolType.html", null ]
     ] ],
+    [ "truth::EvaluationExam", "d5/deb/classtruth_1_1EvaluationExam.html", null ],
+    [ "truth::Evaluator", "df/d9b/classtruth_1_1Evaluator.html", null ],
     [ "std::map", null, [
       [ "truth::BoolDict< truth::BoolValue >", "d6/dcd/classtruth_1_1BoolDict.html", null ],
       [ "truth::BoolDict< T >", "d6/dcd/classtruth_1_1BoolDict.html", null ]
+    ] ],
+    [ "oneptr::queue", null, [
+      [ "truth::EvaluationGroup", "d7/d94/classtruth_1_1EvaluationGroup.html", null ]
     ] ],
     [ "std::string", null, [
       [ "truth::BoolExpr", "d9/dd3/classtruth_1_1BoolExpr.html", null ]
     ] ],
     [ "oneptr::Tree", null, [
-      [ "truth::BoolTree", "da/d32/classtruth_1_1BoolTree.html", null ]
+      [ "truth::Tree", "d8/d7e/classtruth_1_1Tree.html", null ]
     ] ],
     [ "truth::TreeLeaf", "d1/d1b/classtruth_1_1TreeLeaf.html", null ],
     [ "truth::TreeNode", "da/d4e/classtruth_1_1TreeNode.html", null ],
