@@ -20,7 +20,7 @@ project( libtruth CXX )
 
 set( PROJECT_NAME "libtruth" )
 set( PROJECT_DESCRIPTION "Basic and general concepts for truth evaluation with C++ from OnePointer UG." )
-set( PROJECT_VERSION "0.0.1" )
+set( PROJECT_VERSION "0.1.1" )
 
 set( CMAKE_CXX_STANDARD 23 )
 set( CMAKE_C_STANDARD 23 )

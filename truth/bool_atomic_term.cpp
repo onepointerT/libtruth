@@ -5,11 +5,10 @@
 #include <string>
 #include <string_view>
 
-#include "bool_atomic_term.hpp"
-
 #include "bool_base.hpp"
+#include "booltree.hpp"
 
-
+#include "bool_atomic_term.hpp"
 
 
 
@@ -32,9 +31,9 @@ AtomicBoolTerm::AtomicBoolTerm( const atomic_terms_t& bool_expr )
     ,   atomic_terms( bool_expr )
 {}
 
-bool AtomicBoolTerm::eval( const BoolDict<BoolValue> args ) {
-    if ( BoolType::eval_bool( &this->atomic_terms, args ) == truth_true ) return true;
-    return false;
+bool AtomicBoolTerm::eval( const BoolDict<BoolValue>& args ) const {
+    Tree* evaltree = Tree::get_new( &this->atomic_expr );
+    return evaltree->eval( &args );
 }
 
 

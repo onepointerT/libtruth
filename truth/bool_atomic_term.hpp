@@ -46,9 +46,19 @@ public:
 
     /// @brief Evaluate the atomic term with a vector that gives the truth values of all trivial 
     ///     variables of the algebraic term
-    /// @param args A vector with all variables set.
+    /// @param args A bool dict with all variables set.
     /// @return The evaluated truth for the algebraic expression with the values of the parameter dict.
-    bool eval( const BoolDict<BoolValue> args );
+    bool eval( const BoolDict<BoolValue>& args ) const;
+
+    /// @brief Evaluate the atomic term with a vector that gives the truth values of all trivial 
+    ///     variables of the algebraic term
+    /// @param args A bool dict with all variables set.
+    /// @return The evaluated truth for the algebraic expression with the values of the parameter dict.
+    template< typename B >
+        requires is_bool_evaluatable< B >
+    bool eval( const BoolDict<B>& args ) const {
+        return this->eval( static_cast<BoolDict<BoolValue>>(args) );
+    }
 };
 
 } // namespace truth
