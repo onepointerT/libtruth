@@ -5,6 +5,8 @@
 
 
 #include <deque>
+#include <ranges>
+#include <type_traits>
 
 
 namespace oneptr {
@@ -146,7 +148,7 @@ public:
         return std::deque< oneptr::queue_element< T >* >::erase( first, last );
     }
     
-    iterator insert( const_iterator pos, const T& value ) {
+    iterator insert( const_iterator pos, T& value ) {
         queue_element< T >* qe = new queue_element< T >( &value );
         qe->next = *pos;
         qe->prev = (*pos)->next;
@@ -181,10 +183,21 @@ public:
         return it;
     }
 
+    iterator insert( const_iterator pos, queue_element< T >* qe ) {
+        qe->next = *pos;
+        qe->next->prev = qe;
+        qe->prev = (*pos)->prev;
+        qe->prev->next = qe;
+        return std::deque< queue_element< T >* >::insert( pos, qe );
+    }
+
     template< class InputIt >
     iterator insert( const_iterator pos, InputIt first, InputIt last ) {
-        
-        return std::deque< queue_element< T >* >::insert_range( pos, std::ranges::subrange{ first, last } );
+        iterator it = this->begin();
+        for ( auto elem : {first, last} ) {
+            it = this->insert( pos, *elem );
+        }
+        return it;
     }
 
     iterator insert( const_iterator pos, std::initializer_list<T> ilist ) {
@@ -206,13 +219,22 @@ public:
         return it;
     }
 
+    iterator insert( const_iterator pos, std::initializer_list<queue_element<T>*> ilist ) {
+        iterator it;
+        for ( queue_element< T >* qe : ilist ) {
+            qe->prev = (*pos)->prev;
+            qe->next = *pos;
+            it = std::deque< oneptr::queue_element< T >* >::insert( pos, qe );
+            qe->next->prev = qe;
+            qe->prev->next = qe;
+        }
+        return it;
+    }
+
     template<class _Rng>
     iterator insert_range( const_iterator pos, _Rng&& r ) {
         iterator it = this->end();
-        for ( auto elem : r ) {
-            it = this->insert( pos, {elem} );
-        }
-        return it;
+        return this->insert( pos, std::ranges::begin(r), std::ranges::end(r) );
     }
 
     void push_back( const T& value ) {
@@ -243,6 +265,18 @@ public:
     void push_front( T* value ) {
         queue_element< T >* qe = new queue_element< T >( value, this->front() );
         std::deque< oneptr::queue_element< T >* >::push_front( qe );
+    }
+
+    template< typename _Rng >
+    void append_range( _Rng&& rng ) {
+        this->insert_range( this->cend(), rng );
+        /*for ( auto elem : rng ) {
+            if ( typeid(*elem) == typeid(queue_element<T>*) )
+                std::deque< queue_element< T >* >::insert( this->cend(), *elem );
+            else if ( typeid(*elem) == typeid(queue_element<T>) )
+                std::deque< queue_element< T >* >::insert( this->cend(), *elem );
+            else this->insert( this->cend(), {elem} );
+        }*/
     }
 };
 
