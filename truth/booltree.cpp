@@ -152,6 +152,7 @@ void Tree::build_node( node_t* node ) {
 
     if ( ept.first.first == nullptr || ept.first.second == nullptr ) {
         this->build_leafs_of_node( node );
+        return;
     }
 
     node->content->op = ept.second;
