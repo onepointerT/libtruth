@@ -53,7 +53,7 @@ public:
     /// @param logic_terms An initializer list with pointers to algebraic bind object, that concern complete,
     ///   similary operative with more than two elemental operands evaluatable objects. Have a look at `AlgebraicBind`
     ///     and `AlgebraicSmallTerm`
-    EvaluationGroup( const std::initializer_list< AlgebraicBind* > logic_terms );
+    EvaluationGroup( std::initializer_list< AlgebraicBind* > logic_terms );
     /// @brief Constructor
     /// @param expr The logic-algebraic bool expression to evaluate and have insights here
     EvaluationGroup( const BoolExpr& expr );

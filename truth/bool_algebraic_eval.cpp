@@ -11,11 +11,11 @@
 
 namespace truth {
 
-EvaluationGroup::EvaluationGroup( const std::initializer_list< AlgebraicBind* > logic_terms )
+EvaluationGroup::EvaluationGroup( std::initializer_list< AlgebraicBind* > logic_terms )
     :   oneptr::queue< AlgebraicBind >()
     ,   exam( nullptr )
 {
-    this->insert_range( this->cend(), std::ranges::subrange{ logic_terms.begin(), logic_terms.end() } );
+    this->append_range( std::ranges::subrange{ *(logic_terms.begin()), *(logic_terms.end()) } );
 
     exam = get_evaluation_exam();
 }

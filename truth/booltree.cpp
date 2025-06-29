@@ -5,6 +5,8 @@
 #include <string>
 #include <string_view>
 
+#include "bool_base.hpp"
+
 #include "booltree.hpp"
 
 
@@ -113,7 +115,27 @@ void Tree::build_node( node_t* node ) {
 
     BoolExpr::expr_pair_t ept;
     if ( node->content->expr().contains(")") ) {
-        ept = node->content->expr().splitBehindFirstClosingTermBracket();
+        BoolType::expression_t expt = BoolType::atomic_bracket_find( node->content->expr() );
+        atomic_expr_t* expt_queue = expt.first;
+        if ( expt_queue->size() == 0 ) {
+            ept = node->content->expr().splitBehindFirstClosingTermBracket();
+        } else {
+            ept = { { new BoolExpr((*expt_queue)[0]->get()->first)
+                    , new BoolExpr((*expt_queue)[1]->get()->first)
+            }, BoolOperator::UNKNOWN };
+
+            size_t pos1 = node->content->expr().find_first_of( *ept.first.first );
+            size_t pos2 = node->content->expr().find_first_of( *ept.first.second );
+
+            if ( pos1 > pos2 ) {
+                std::string opstr = node->content->expr().substr( pos2+ept.first.second->length()+1, pos1-pos2+ept.first.second->length()-2 );
+                ept.second = BoolOperator::is( opstr );
+            } else {
+                std::string opstr = node->content->expr().substr( pos1+ept.first.first->length()+1, pos2-pos1+ept.first.first->length()-2 );
+                ept.second = BoolOperator::is( opstr );
+            }
+        }
+        
     } else {
         ept = node->content->expr().splitAtFirstOperator();
     }

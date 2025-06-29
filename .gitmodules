@@ -1,3 +1,9 @@
-[submodule "truth/oneptr/logcpp"]
-	path = truth/oneptr/logcpp
-	url = https://github.com/onepointerT/liblogcpp.git
+#[submodule "truth/oneptr/log"]
+#	path = truth/oneptr/log
+#	url = https://github.com/onepointerT/liblogcpp.git
+[submodule "truth/oneptr/mINI"]
+	path = truth/oneptr/mINI
+	url = https://github.com/metayeti/mINI.git
+[submodule "truth/oneptr/ymlite"]
+	path = truth/oneptr/ymlite
+	url = https://github.com/makuke1234/ymlite.git
