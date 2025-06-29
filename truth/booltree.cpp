@@ -120,9 +120,19 @@ void Tree::build_node( node_t* node ) {
         if ( expt_queue->size() == 0 ) {
             ept = node->content->expr().splitBehindFirstClosingTermBracket();
         } else {
-            ept = { { new BoolExpr((*expt_queue)[0]->get()->first)
-                    , new BoolExpr((*expt_queue)[1]->get()->first)
-            }, BoolOperator::UNKNOWN };
+
+            BoolExpr* expr1 = &((*expt_queue)[0]->get()->first);
+            std::string reststr = node->content->expr().find_suffix_behind(*expr1);
+            BoolExpr tmp = reststr;
+            size_t pos_op = tmp.find_first_of_all( {"&&", "||", ">>"});
+            BoolOperator::Type lop = BoolOperator::UNKNOWN;
+            if ( pos_op != tmp.npos ) {
+                lop = BoolOperator::is( tmp.substr( pos_op, 2 ) );
+            }
+
+            ept = { { expr1
+                    , new BoolExpr( tmp.substr(pos_op+3) )
+            }, lop };
 
             size_t pos1 = node->content->expr().find_first_of( *ept.first.first );
             size_t pos2 = node->content->expr().find_first_of( *ept.first.second );
