@@ -245,7 +245,18 @@ BoolValue Tree::eval( const leaf_t* leaf, const BoolDict<BoolValue>* bd ) const 
 
 BoolValue Tree::eval( const node_t* node, const BoolDict<BoolValue>* bd ) const {
 
+    // Elemental unary bool term, only one variable
+    if ( node->content->op == BoolOperator::UNKNOWN /*&& node == this->root*/ )  {
+        if ( node->content->expr() == "True" || node->content->expr() == "False" 
+          || node->content->expr() == "true" || node->content->expr() == "false"
+          || node->content->expr() == "None" || node->content->expr() == "none"
+        ) {
+            return BoolValue::parse( node->content->expr().c_str() );
+        } else return bd->at( node->content->expr() ); 
+    }
+
     BoolValue lchld, rchld, thisnode = BoolValue::Unknown;
+
     if ( node->subs.size() > 0 ) {
         node_t* cnode = node->subs[0];
         lchld = this->eval( cnode, bd );
