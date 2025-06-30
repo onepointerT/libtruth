@@ -16,7 +16,7 @@
 
 cmake_minimum_required( VERSION 3.22 )
 
-project( libtruth CXX )
+project( libtruth CXX C )
 
 set( PROJECT_NAME "libtruth" )
 set( PROJECT_DESCRIPTION "Basic and general concepts for truth evaluation with C++ from OnePointer UG." )
@@ -25,12 +25,20 @@ set( PROJECT_VERSION "0.1.1" )
 set( CMAKE_CXX_STANDARD 23 )
 set( CMAKE_C_STANDARD 23 )
 
+add_definitions( -DTRUTH_HAVE_INI_WRITE )
 
 include_directories( . )
 include_directories( ./truth )
+include_directories( ./truth/oneptr/mINI/src/ )
+include_directories( ./truth/oneptr/log/src )
 
+add_subdirectory( truth/oneptr/log )
+add_subdirectory( truth/oneptr/mINI )
+
+file( GLOB ONEPTR_TRUTH_SRC truth/truth*.c* )
+add_library( oneptr_truth ${ONEPTR_TRUTH_SRC} )
+target_link_libraries( oneptr_truth logcpp mINI )
 
 file( GLOB ONEPTR_BOOL_SRC truth/bool*.cpp )
 add_library( oneptr_bool ${ONEPTR_BOOL_SRC} )
-
-
+target_link_libraries( oneptr_bool oneptr_truth )

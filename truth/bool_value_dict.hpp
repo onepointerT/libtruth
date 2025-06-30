@@ -143,6 +143,9 @@ public:
     /// @param lvalue The value
     /// @return `! value`
     bool operator !() { return ! this->value; }
+
+    static bool is_parsable( const char* value );
+    static BoolValue::Type parse( const char* value );
 };
 
 /// @brief Needed for the concepts `is_convertible` and `is_bool_evaluatable`, that need a value for testing the trueness of `static_cast`-functionalability.
