@@ -51,6 +51,16 @@ public:
     bool write( const char* path );
 #endif
 
+    /// @brief Get a value by searching for a section's key
+    /// @param section The section identifier
+    /// @param key The key of the section that thus has this value
+    /// @return A reference to the key's value or an empty string, if the value did not exist yet.
+    std::string& getPath( const std::string section, const std::string key );
+    /// @brief The path extension to *.ini files gets values by `section.varname`.
+    /// @param section_path The path in the format `section_name.var_name`.
+    /// @return A reference to the key's value or an empty string, if the value did not exist yet.
+    std::string& getPath( const std::string section_path );
+
     /// @brief Write the ini variables to a `BoolDict<BoolValue>`, if a key's value is parsable to `BoolValue`
     /// @return A reference to a newly-created bool dict.
     BoolDict<BoolValue>& toDict() const;

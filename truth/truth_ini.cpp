@@ -31,6 +31,32 @@ bool Ini::write( const char* path ) {
 #endif
 
 
+std::string& Ini::getPath( const std::string section, const std::string key ) {
+    if ( this->has( section ) ) {
+        ini_map_t& im = (*this)[section];
+        if ( im.has( key ) ) {
+            return im[key];
+        } else {
+            im[key] = *new std::string();
+            return im[key];
+        }
+    } else {
+        (*this)[section] = *new ini_map_t();
+        (*this)[section][key] = *new std::string();
+        return (*this)[section][key];
+    }
+}
+
+std::string& Ini::getPath( const std::string section_path ) {
+    size_t dotpos = section_path.find_first_of( '.' );
+    if ( dotpos != section_path.npos ) {
+        std::string section = section_path.substr( 0, dotpos-1 );
+        std::string key = section_path.substr( dotpos+1 );
+        return this->getPath( section, key );
+    } else return *new std::string();
+}
+
+
 BoolDict<BoolValue>& Ini::toDict() const {
     BoolDict<BoolValue>* bd = new BoolDict<BoolValue>();
     return this->toDict( *bd );
