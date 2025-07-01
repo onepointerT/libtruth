@@ -257,7 +257,7 @@ public:
     /// @param key The key to set the value of.
     /// @param value_func A bool evaluation function that thus accepts a (`*this`) `BoolDict` to set the value to
     ///  behind evaluation.
-    void set( const char* key, bool (*value_func)(BoolDict bd) ) {
+    void set( const char* key, bool (*value_func)(BoolDict& bd) ) {
         (*this)[key] = value_func(*this);
     }
 
@@ -266,7 +266,7 @@ public:
     /// @param value_func A bool evaluation function that thus accepts a (`bd`) `BoolDict` to set the value to
     ///  behind evaluation.
     /// @param bd A `BoolDict` to evaluate `value_func` with.
-    void set( const char* key, bool (*value_func)(BoolDict bdf), const BoolDict* bd ) {
+    void set( const char* key, bool (*value_func)(BoolDict& bdf), const BoolDict* bd ) {
         (*this)[key] = value_func(*bd);
     }
 
