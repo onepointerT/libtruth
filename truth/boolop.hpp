@@ -7,6 +7,8 @@
 
 #include <cstddef>
 #include <cstdint>
+#include <initializer_list>
+#include <vector>
 
 #include "bool_value_dict.hpp"
 
@@ -39,6 +41,25 @@ public:
         else if ( op == Type::NEGATION ) return " ! ";
         else if ( op == Type::ANY ) return "{ &&, ||, >> }";
         else return "";
+    }
+
+    static size_t find_next_of( const std::initializer_list<const char*> strs, const std::string str, const size_t pos = 0, const size_t _count = std::string::npos ) {
+
+        std::vector<size_t> posvec;
+        for ( std::string s : strs ) {
+            size_t spos = str.find_first_of( s.c_str(), pos, _count );
+            if ( spos != s.npos ) posvec.push_back( spos );
+        }
+
+        size_t smallest = pos;
+        for ( size_t sz : posvec ) {
+            if ( sz < smallest ) smallest = sz;
+        }
+
+        return smallest;
+    }
+    static size_t find_next_operator( const std::string str, const size_t pos = 0, const size_t _count = std::string::npos ) {
+        return BoolOperator::find_next_of( { "&&", "||", ">>" }, str, pos, _count );
     }
 
     static bool eval( const bool lhs, const BoolOperator::Type op, const bool rhs ) {

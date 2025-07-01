@@ -4,6 +4,7 @@
 #pragma once
 
 #include <cstdint>
+#include <initializer_list>
 #include <map>
 #include <stdexcept>
 #include <string>
@@ -14,21 +15,28 @@ namespace truth {
 
 class NumericVariable {
 public:
-    union Value
+    class Value
     {
+    public:
         std::string vname;
         double v;
 
         Value() :   vname("") {}
+        Value( const std::string str ) :   vname(str) {}
+        Value( const double dbl ) :   v(dbl) {}
+        Value( const Value& other  ) :   vname(other.vname), v(other.v) {}
+
+        ~Value() {}
 
         Value& operator=( const std::string str ) { Value* val = new Value(); val->vname = str; return *val; }
         Value& operator=( const double dbl ) { Value* val = new Value(); val->v = dbl; return *val; }
         Value& operator=( const int i ) { Value* val = new Value(); val->v = static_cast<double>(i); return *val; }
 
-        operator std::string() const { return vname; }
         operator double() const { return v; }
         operator int() const { return static_cast<int>(v); }
         operator unsigned int() const { return static_cast<int>(v) * (-1); }
+
+        const std::string string() const { return vname.length() > 0 ? vname : std::to_string(v); }
     };
     
     Value value;
@@ -36,12 +44,13 @@ public:
     NumericVariable( const std::string str )    :   value( str ) {}
     NumericVariable( const double dbl ) :   value( dbl ) {}
     NumericVariable( const int i ) :   value( i ) {}
+    NumericVariable( const NumericVariable& nv_other ) :   value( nv_other.value ) {}
 
     NumericVariable& operator=( const std::string str ) { NumericVariable* nv = new NumericVariable( str ); return *nv; }
     NumericVariable& operator=( const double dbl ) { NumericVariable* nv = new NumericVariable( dbl ); return *nv; }
     NumericVariable& operator=( const int i ) { NumericVariable* nv = new NumericVariable( i ); return *nv; }
-
-    operator std::string() const { return value; }
+    NumericVariable& operator=( const NumericVariable& other ) { NumericVariable* nv = new NumericVariable( other ); return *nv; }
+    
     operator double() const { return value; }
     operator int() const { return value; }
     operator unsigned int() const { return value; }
@@ -87,7 +96,7 @@ public:
     /// @param key 
     /// @return A reference to numeric, for better convenience the reference's value is also updated in the dictionary,
     ///  if modified.
-    NumericVariable& getValue( const char* key ) const {
+    T& getValue( const char* key ) {
         try {
             T& value = this->at( key );
             return value;
@@ -95,6 +104,20 @@ public:
             NumericVariable* nv = new NumericVariable(0.0);
             (*this)[key] = *nv;
             return *nv;
+        }
+        
+    }
+
+    /// @brief Get a reference to a numeric type.
+    /// @param key 
+    /// @return A reference to numeric, for better convenience the reference's value is also updated in the dictionary,
+    ///  if modified.
+    const T& getValue( const char* key ) const {
+        try {
+            const T& value = this->at( key );
+            return value;
+        } catch ( std::out_of_range& oor ) {
+            return *new NumericVariable(0.0);
         }
         
     }
@@ -168,12 +191,16 @@ public:
     static NumericOperator::Type is( const std::string str );
     static const std::string string( const NumericOperator::Type opt );
 
-    static size_t find_next_of( const std::string str, const size_t pos = 0, const size_t _count = std::string::npos );
+    static size_t find_next_of( const std::initializer_list<const char*> strs, const std::string str, const size_t pos = 0, const size_t _count = std::string::npos );
+    static size_t find_next_operator( const std::string str, const size_t pos = 0, const size_t _count = std::string::npos );
+
+    static const NumericVariable& lookup( const std::string varname, const NumericDict<>& nd );
 
     static bool eval( const double lhs, const NumericOperator::Type nop, const double rhs );
     static bool eval( const std::string lhs, const NumericOperator::Type nop, const std::string rhs, const NumericDict<>& nd );
     static bool eval( const std::string lhs, const NumericOperator::Type nop, const double rhs, const NumericDict<>& nd );
     static bool eval( const double lhs, const NumericOperator::Type nop, const std::string rhs, const NumericDict<>& nd );
+    static bool eval( const NumericVariable& lhs, const NumericOperator::Type nop, const NumericVariable& rhs, const NumericDict<>& nd );
 };
 
 

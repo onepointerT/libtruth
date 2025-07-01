@@ -1,5 +1,5 @@
 ### OnePointer C++ LibTruth
-##### v0.1.1
+##### v0.1.2
 ###### Basic and general concepts for truth evaluation with C++ from OnePointer UG
 
 
@@ -53,4 +53,5 @@ tp.second->set("b", []() { return btree->eval(*bd) } );
 truth::eval( tp );
 ```
 
-Interaction for getting the realistic values of bool dicts is under development as well as logging functionality.
+* Numeric comparison operators in logical expressions will be implemented
+* Interaction for getting the realistic values of bool dicts is under development as well as logging functionality.
