@@ -13,6 +13,7 @@
 #include <vector>
 
 #include "boolexpr.hpp"
+#include "bool_value.hpp"
 #include "bool_value_dict.hpp"
 
 

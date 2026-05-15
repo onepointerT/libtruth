@@ -10,7 +10,7 @@
 #include <initializer_list>
 #include <vector>
 
-#include "bool_value_dict.hpp"
+#include "bool_value.hpp"
 
 
 
@@ -34,7 +34,7 @@ public:
         return ( op == "&&" ? Type::AND : ( op == "||" ? Type::OR : ( op == ">>" ? Type::IMPLIES : ( op == "!" ? Type::NEGATION : Type::UNKNOWN ) ) ) );
     }
 
-    static const std::string string( const BoolOperator::Type op ) {
+    static const std::string string( const truth::BoolOperator::Type op ) {
         if ( op == Type::AND ) return " && ";
         else if ( op == Type::OR ) return " || ";
         else if ( op == Type::IMPLIES ) return " >> ";
@@ -59,10 +59,10 @@ public:
         return smallest;
     }
     static size_t find_next_operator( const std::string str, const size_t pos = 0, const size_t _count = std::string::npos ) {
-        return BoolOperator::find_next_of( { "&&", "||", ">>" }, str, pos, _count );
+        return truth::BoolOperator::find_next_of( { "&&", "||", ">>" }, str, pos, _count );
     }
 
-    static bool eval( const bool lhs, const BoolOperator::Type op, const bool rhs ) {
+    static bool eval( const bool lhs, const truth::BoolOperator::Type op, const bool rhs ) {
         if ( op == Type::UNKNOWN ) return false;
         else if ( op == Type::AND ) return lhs && rhs;
         else if ( op == Type::OR ) return lhs || rhs;

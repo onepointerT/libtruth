@@ -7,7 +7,7 @@
 #include <utility>
 
 #include "bool_atomic_term.hpp"
-#include "bool_value_dict.hpp"
+#include "bool_value.hpp"
 
 namespace truth {
 

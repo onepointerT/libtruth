@@ -7,6 +7,7 @@
 #include <utility>
 #include <vector>
 
+#include "bool_value.hpp"
 #include "bool_value_dict.hpp"
 #include "boolexpr.hpp"
 #include "boolop.hpp"

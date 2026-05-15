@@ -13,7 +13,7 @@
 #include <utility>
 #include <vector>
 
-#include "bool_value_dict.hpp"
+#include "bool_value.hpp"
 #include "boolop.hpp"
 #include "oneptr/queue.hpp"
 
@@ -103,20 +103,20 @@ public:
     size_t rfind_first_of_all( const std::initializer_list<const char*> ils, size_t pos = npos, size_t count = npos ) const;
 
     /// @brief An expression pair
-    typedef std::pair< std::pair< BoolExpr*, BoolExpr* >, BoolOperator::Type > expr_pair_t;
+    typedef std::pair< std::pair< BoolExpr*, BoolExpr* >, truth::BoolOperator::Type > expr_pair_t;
 
     /// @brief Split the expression at the first occurence of the logical operator.
     /// @param logic_operator The logical operator to search for. If `BoolOperator::ANY` is selected (default), then the first position
     ///     of any logical operator is selected.
     /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{nullptr, nullptr}`,
     ///     if the search could not have any results.
-    expr_pair_t splitAtFirstOperator( const BoolOperator::Type logic_operator = BoolOperator::ANY ) const;
+    expr_pair_t splitAtFirstOperator( const truth::BoolOperator::Type logic_operator = truth::BoolOperator::ANY ) const;
     /// @brief Split the expression at the last occurence of the logical operator.
     /// @param logic_operator The logical operator to search for. If `BoolOperator::ANY` is selected (default), then the last position
     ///     of any logical operator is selected.
     /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{nullptr, nullptr}`,
     ///     if the search could not have any results.
-    expr_pair_t splitAtLastOperator( const BoolOperator::Type logic_operator = BoolOperator::ANY ) const;
+    expr_pair_t splitAtLastOperator( const truth::BoolOperator::Type logic_operator = truth::BoolOperator::ANY ) const;
     /// @brief Split behind the first closing term bracket
     /// @return Two newly created pointers to `BoolExpr` with the left and the right operands of the logical operator. `{BoolExpr*, nullptr}`,
     ///   if the logical expression is only followed by an operator and no further operands. `{ nullptr, nullptr }`, if the search could not

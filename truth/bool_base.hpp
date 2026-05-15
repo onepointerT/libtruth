@@ -16,7 +16,7 @@
 #include "boolexpr.hpp"
 #include "boolop.hpp"
 #include "bool_algebraic_bind.hpp"
-#include "bool_value_dict.hpp"
+#include "bool_value.hpp"
 #include "oneptr/queue.hpp"
 
 

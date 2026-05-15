@@ -66,7 +66,7 @@ BoolDict<BoolValue>& Ini::toDict( BoolDict<BoolValue>& bd ) const {
     for ( section_iterator si : { begin(), end() } ) {
         for ( ini_map_iterator im : { si->second.begin(), si->second.end() } ) {
             if ( BoolValue::is_parsable(im->second.c_str())) {
-                bd[im->first] = BoolValue::parse( im->second.c_str() );
+                bd[im->first.substr()] = BoolValue::parse( im->second.c_str() );
             }
         }
     }

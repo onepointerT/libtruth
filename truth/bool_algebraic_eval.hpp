@@ -10,7 +10,7 @@
 
 #include "bool_algebraic_bind.hpp"
 #include "bool_base.hpp"
-#include "bool_value_dict.hpp"
+#include "bool_value.hpp"
 #include "boolexpr.hpp"
 #include "boolop.hpp"
 #include "booltree.hpp"
