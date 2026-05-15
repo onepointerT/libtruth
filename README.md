@@ -1,7 +1,8 @@
 ### OnePointer C++ LibTruth
-##### v0.1.2
-###### Basic and general concepts for truth evaluation with C++ from OnePointer UG
 
+##### v0.1.3
+
+###### Basic and general concepts for truth evaluation with C++ from OnePointer UG
 
 This library helps evaluating truth values of algebraic truth terms corresponding to
 their real value of coherent variables. Under development.

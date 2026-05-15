@@ -20,25 +20,24 @@ project( libtruth CXX C )
 
 set( PROJECT_NAME "libtruth" )
 set( PROJECT_DESCRIPTION "Basic and general concepts for truth evaluation with C++ from OnePointer UG." )
-set( PROJECT_VERSION "0.1.2" )
+set( PROJECT_VERSION "0.1.3" )
 
 set( CMAKE_CXX_STANDARD 23 )
 set( CMAKE_C_STANDARD 23 )
 
 add_definitions( -DTRUTH_HAVE_INI_WRITE )
 
-include_directories( . )
-include_directories( ./truth )
-include_directories( ./truth/oneptr/mINI/src/ )
-include_directories( ./truth/oneptr/log/src )
+include_directories( truth )
+include_directories( truth/oneptr/mINI/src )
 
-add_subdirectory( truth/oneptr/log )
-add_subdirectory( truth/oneptr/mINI )
-
-file( GLOB ONEPTR_TRUTH_SRC truth/truth*.c* )
+file( GLOB ONEPTR_TRUTH_SRC truth/oneptr/*.cpp truth/truth*.cpp )
 add_library( oneptr_truth ${ONEPTR_TRUTH_SRC} )
 target_link_libraries( oneptr_truth logcpp mINI )
 
 file( GLOB ONEPTR_BOOL_SRC truth/bool*.cpp )
 add_library( oneptr_bool ${ONEPTR_BOOL_SRC} )
 target_link_libraries( oneptr_bool oneptr_truth )
+
+file( GLOB ONEPTR_PRIOBOOL_SRC truth/priobool*.cpp )
+add_library( oneptr_priobool ${ONEPTR_PRIOBOOL_SRC} )
+target_link_libraries( oneptr_priobool oneptr_bool )
